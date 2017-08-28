@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 41px 375px 41px 375px;
+	background-image: url("images/header-background.jpg");
+	background-repeat: no-repeat;
+}
+
+h1 {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	display: inline;
+	font-family: "Montserrat";
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation {
+	margin-left: 130px;
+	margin-right: 130px;
+}
+
+.navigation-item {	
+	margin-right: 10px;
+}
+
+.navigation-item a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 14px;
+	padding: 5px 7px 5px 7px;
+}
+
+.navigation-item a:hover {
+	color: #fff;
+	background-color: #00b0ff;
+}
+
+.social-button {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 50%;
+	height: 36px;
+	width: 36px;
+	text-align: center;
+	line-height: 39px;
+}
+
+.slogan {
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 122px;
+	margin-bottom: 122px;
+}
+
+.subslogan {
+	font-size: 24px;
+	color: #fff;
+}
+
+.surfboards {
+	height: 600px;
+	width: 1030px;
+	background-color: #fff;
+	box-shadow: 0px -2px 44px 5px rgba(0,0,0,0.32);
+}
