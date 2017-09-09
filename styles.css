@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 41px 375px 41px 375px;
-	background-image: url("images/header-background.jpg");
+	background-image: url("images/header-background.jpg"), url("images/header-background.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -67,8 +67,184 @@ a {
 }
 
 .surfboards {
+	position: relative;
 	height: 600px;
 	width: 1030px;
 	background-color: #fff;
+	background-image: linear-gradient(130deg, #00d2ff 33%, transparent 33%);
 	box-shadow: 0px -2px 44px 5px rgba(0,0,0,0.32);
+}
+
+.surfboards > img {
+	padding-top: 35px;
+	padding-left: 28px;
+}
+
+.surfboard-previews {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	top: 157px;
+	left: 470px;
+}
+
+.surfboard-previews li {
+	margin-bottom: 3px;
+}
+
+.surfboard-previews li:last-child {
+	margin-bottom: 0;
+}
+
+.surfboard-preview {
+	border: 1px solid #ccc;
+}
+
+.surfboard-preview.selected, .surfboard-preview:hover{
+	outline: 2px solid #00b0ff;
+	outline-offset: -2px;
+}
+
+.surfboard-title {
+	font: bold 20px/26px "Montserrat", arial;
+	width: 335px;
+	height: 50px;
+	position: absolute;
+	top: 45px;
+	left: 595px;
+}
+
+.rating {
+	position: absolute;
+	top: 100px;
+	left: 595px;
+}
+
+.stars {
+	display: inline-block;
+}
+
+.rating-total {
+	font: bold 12px "Montserrat", arial;
+	color: #787878;
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
+
+.rating-total:before {
+	content: "(";
+}
+
+.rating-total:after {
+	content: ")";
+}
+
+.surfboard-scroll {
+	position: absolute;
+    top: 50px;
+    right: -38px;
+	width: 76px;
+}
+
+svg.arrow {
+	background-color: #f2d800;
+	width: 38px;
+	height: 38px;
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2;
+	float: left;
+}
+
+svg.arrow:hover {
+	stroke: #000;
+}
+
+.page-counter {
+	position: absolute;
+	width: 58px;
+	height: 38px;
+	top: 88px;
+	right: 0;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	font: 14px/38px "Montserrat", arial;
+}
+
+.surfboard-tabs {
+	position: absolute;
+	top: 155px;
+	left: 595px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-bottom: 1px solid #a0a0a0;
+}
+
+.surfboard-tabs li {
+	display: inline;
+	text-transform: uppercase;
+	font: bold 14px/25px "Raleway", arial;
+	margin-right: 30px;
+	padding-bottom: 3px;
+	color: #a0a0a0;
+}
+
+.surfboard-tabs li.selected {
+	border-bottom: 3px solid #00b0ff;
+	color: #000;
+}
+
+.surfboard-tab-content {
+	position: absolute;
+	left: 595px;
+	top: 205px;
+	width: 400px;
+	height: 170px;
+	font: 16px/24px "Raleway", arial;
+	color: #787878;
+}
+
+.surfboard-price {
+	position: absolute;
+	left: 595px;
+	top: 405px;
+	width: 120px;
+	height: 45px;
+	margin-right: 5px;
+	color: #000;
+	font: bold 24px/45px "Montserrat", arial;
+}
+
+.surfboard-buy {
+	position: absolute;
+	left: 720px;
+	top: 405px;
+	width: 140px;
+	height: 45px;
+	background-color: #00b0ff;
+	color: #fff;
+	font: bold 14px/45px "Montserrat", arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.surfboard-buy:hover {
+	color: #000;
+}
+
+.surfboard-all {
+	position: absolute;
+	bottom: 70px;
+	left: 595px;
+	color: #00b0ff;
+	height: 22px;
+	width: 125px;
+	font: 16px/22px "Montserrat", arial;
+	border-bottom: 2px solid #00b0ff;
+	padding-bottom: 3px;
 }
