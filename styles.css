@@ -34,6 +34,7 @@ a {
 .wrapper {
 	margin: 20px auto;
 	width: 1100px;
+	border: 1px solid black; /*delete when the site will has finished*/
 }
 
 .header {
@@ -105,7 +106,7 @@ a {
 .surfboard-previews {
 	padding: 0;
 	margin: 0;
-	list-style: none;
+	list-style-type: none;
 	position: absolute;
 	top: 157px;
 	left: 470px;
@@ -129,7 +130,7 @@ a {
 }
 
 .surfboard-title {
-	font: bold 20px/26px "Montserrat", arial;
+	font: bold 20px/26px "Montserrat", sans-serif;
 	width: 335px;
 	height: 50px;
 	position: absolute;
@@ -148,7 +149,7 @@ a {
 }
 
 .rating-total {
-	font: bold 12px "Montserrat", arial;
+	font: bold 12px "Montserrat", sans-serif;
 	color: #787878;
 	display: inline-block;
 	position: relative;
@@ -170,7 +171,7 @@ a {
 	width: 76px;
 }
 
-svg.arrow {
+.surfboard-arrow {
 	background-color: #f2d800;
 	width: 38px;
 	height: 38px;
@@ -180,7 +181,7 @@ svg.arrow {
 	float: left;
 }
 
-svg.arrow:hover {
+.surfboard-arrow:hover {
 	stroke: #000;
 }
 
@@ -193,7 +194,7 @@ svg.arrow:hover {
 	color: #fff;
 	background-color: #000;
 	text-align: center;
-	font: 14px/38px "Montserrat", arial;
+	font: 14px/38px "Montserrat", sans-serif;
 }
 
 .surfboard-tabs {
@@ -203,14 +204,14 @@ svg.arrow:hover {
 	height: 25px;
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	list-style-type: none;
 	border-bottom: 1px solid #a0a0a0;
 }
 
 .surfboard-tabs li {
 	display: inline;
 	text-transform: uppercase;
-	font: bold 14px/25px "Raleway", arial;
+	font: bold 14px/25px "Raleway", sans-serif;
 	margin-right: 30px;
 	padding-bottom: 3px;
 	color: #a0a0a0;
@@ -227,7 +228,7 @@ svg.arrow:hover {
 	top: 205px;
 	width: 400px;
 	height: 170px;
-	font: 16px/24px "Raleway", arial;
+	font: 16px/24px "Raleway", sans-serif;
 	color: #787878;
 }
 
@@ -239,7 +240,7 @@ svg.arrow:hover {
 	height: 45px;
 	margin-right: 5px;
 	color: #000;
-	font: bold 24px/45px "Montserrat", arial;
+	font: bold 24px/45px "Montserrat", sans-serif;
 }
 
 .surfboard-buy {
@@ -250,7 +251,7 @@ svg.arrow:hover {
 	height: 45px;
 	background-color: #00b0ff;
 	color: #fff;
-	font: bold 14px/45px "Montserrat", arial;
+	font: bold 14px/45px "Montserrat", sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -261,7 +262,7 @@ svg.arrow:hover {
 
 .link {
 	color: #00b0ff;
-	font: 16px/22px "Montserrat", arial;
+	font: 16px/22px "Montserrat", sans-serif;
 	border-bottom: 2px solid #00b0ff;
 	padding-bottom: 3px;
 }
@@ -276,7 +277,7 @@ svg.arrow:hover {
 
 .about-us {
 	position: relative;
-	top: 590px;
+	margin-top: 590px;
 	width: 345px;
 	text-align: center;
 	background-color: #fff;
@@ -294,7 +295,7 @@ svg.arrow:hover {
 }
 
 .about-us h3 {
-	font: normal 18px "Montserrat", arial;
+	font: normal 18px "Montserrat", sans-serif;
 	color: #000;
 	text-transform: uppercase;
 }
@@ -325,4 +326,190 @@ svg.arrow:hover {
 	top: 210px;
 	left: 615px;
 	box-shadow: 20px 20px 50px 5px rgba(0,0,0,0.32);
+}
+
+.our-team {	
+	position: relative;
+	margin-top: 250px;
+	text-align: center;
+}
+
+.our-team-card {
+	border-radius: 4px;
+	box-shadow: 20px 20px 50px 5px rgba(0,0,0,0.32);
+	width: 260px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	background-color: #fff;
+	padding: 30px 0 50px 0;
+}
+
+.our-team-card:not(:first-child) {
+	margin-left: -20px;
+}
+
+.our-team-card:nth-child(odd) {
+	top: 20px;
+	z-index: 1;
+}
+
+.our-team-card-name {
+	color: #00b0ff;
+	font: 18px 'Montserrat', sans-serif;
+}
+
+.our-team-card-avatar {
+	margin-bottom: 10px;
+	width: 100px;
+    height: 100px;
+    border-radius: 50%;
+	border: 2px solid #fff;
+}
+
+.our-team-card-nickname, .our-team-card-location {
+	color: #8c8c8c;
+	font: 14px "Raleway", sans-serif;
+}
+
+.our-team-card-delimiter {
+	margin: 15px 0 10px 0;
+}
+
+.our-team-card-location::before {
+	content: url('images/Pin-icon.png');
+	margin-right: 5px;
+}
+
+.our-team-card:hover {
+	background-color: #00b0ff;
+}
+
+.our-team-card:hover .our-team-card-name, .our-team-card:hover .our-team-card-nickname, .our-team-card:hover .our-team-card-location {
+	color:  #fff;
+}
+
+.our-team-card:hover .our-team-card-delimiter {
+	content: url('images/WavesSelected.png');
+}
+
+.our-team-card:hover .our-team-card-location::before {
+	content: url('images/Pin-icon-selected.png');
+}
+
+.our-team-arrow {
+	border: 2px solid #646464;
+	position: absolute;
+	top: 130px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.our-team-arrow:hover {
+	border: 2px solid #fff;
+	box-shadow: 0 0 25px 0 rgba(0,0,0,0.32);
+}
+
+.our-team-arrow.left {
+	left: -36px;
+}
+
+.our-team-arrow.right {
+	right: -16px;
+}
+
+.our-team-arrow svg {
+	fill: none;
+	stroke: #646464;
+	stroke-width: 2;
+	width: 38px;
+	height: 38px;
+	margin-top: 6px;
+}
+
+.our-team-arrow:hover svg {
+	stroke: #0022ff;
+}
+
+.blog {
+	text-align: center;
+	margin-top: 210px;
+}
+
+.blog-title {
+	font: normal 18px "Montserrat", sans-serif;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.blog-title-delimiter {
+	stroke: #000;
+	stroke-width: 2px;
+	width: 13px;
+	height: 13px;
+}
+
+.blog-gallery {
+	list-style-type: none;
+	padding: 0;
+	margin: 40px 0 0 0;
+}
+
+.blog-gallery-item {
+	position: relative;
+	display: inline-block;
+	width: 317px;
+	margin: 0 15px;
+}
+
+.blog-gallery-item:hover {
+	box-shadow: 0 0 25px 0 rgba(0,0,0,0.32);
+}	
+
+.blog-gallery-item-gradient {
+	height: 212px;
+}
+
+.blog-gallery-item-gradient::after {
+	background-image: linear-gradient(to bottom, transparent, #000);
+	content: '';
+	position: absolute;
+	width: 317px;
+	height: 212px;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}
+
+.blog-gallery-item:hover .blog-gallery-item-gradient::after {
+	background-image: none;
+}
+
+.blog-gallery-item-description {
+	width: 220px;
+	font: 16px/24px "Raleway", sans-serif;
+	color: #787878;
+	text-align: start;
+	margin: 25px auto 25px auto;
+}
+
+.blog-gallery-item:hover .blog-gallery-item-description {
+	color: #0022ff;
+}
+
+.blog-button-gallery {
+	display: inline-block;
+	background-color: #00b0ff;
+	color: #fff;
+	font: bold 14px/14px "Montserrat", sans-serif;
+	margin-top: 40px;
+	padding: 16px 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.blog-button-gallery:hover {
+	color: #000;
 }
