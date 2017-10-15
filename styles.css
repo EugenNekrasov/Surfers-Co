@@ -31,10 +31,13 @@ a {
 	text-decoration: none;
 }
 
+.content {
+	position: relative;
+}
+
 .wrapper {
 	margin: 20px auto;
 	width: 1100px;
-	border: 1px solid black; /*delete when the site will has finished*/
 }
 
 .header {
@@ -436,6 +439,7 @@ a {
 .blog {
 	text-align: center;
 	margin-top: 210px;
+	margin-bottom: 700px;
 }
 
 .blog-title {
@@ -512,4 +516,185 @@ a {
 
 .blog-button-gallery:hover {
 	color: #000;
+}
+
+.socials {
+	position: absolute;
+	bottom: -925px;
+	left: -60px;
+}
+
+.socials-instagram {
+	display: inline-block;
+}
+
+.socials-instagram-gallery {
+	max-width: 640px;
+}
+
+.socials-instagram-gallery::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.socials-instagram-gallery-item {
+	float: left;
+}
+
+.socials-instagram-footer {
+	height: 70px;
+	background-color: #fff;
+}
+
+.socials-instagram-footer::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.socials-instagram-footer-logo {
+	vertical-align: middle;
+	margin: 0 20px;
+}
+
+.socials-instagram-footer-slogan {
+	vertical-align: middle;
+	color: #00b0ff;
+	font: bold 24px/24px "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	margin-right: 15px;
+}
+
+.socials-instagram-footer-nickname {
+	vertical-align: middle;
+	font: 16px/16px "Raleway", sans-serif;
+}
+
+.socials-facebook {
+	width: 440px;
+	height: 348px;
+	background-image: linear-gradient(to bottom, #385490 50%, #e5e5e5 50%);
+	display: inline-block;
+	vertical-align: top;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.socials-facebook-logo {
+	display: block;
+	margin: 30px auto;
+}
+
+.socials-facebook-group {
+	position: relative;
+	height: 130px;
+	width: 340px;
+	background-color: #f6f7f9;
+	background-image: url("images/Cover.jpg");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.socials-facebook-group-photo {
+	float: left;
+	margin: 8px 5px 0 8px;
+}
+
+.socials-facebook-group-title {
+	font-size: 17px;
+	font-family: "Helvetica LT Std", sans-serif;
+	color: #fff;
+	padding-top: 15px;
+}
+
+.socials-facebook-group-likes {
+	font-size: 12px;
+	font-family: "Helvetica LT Std", sans-serif;
+	color: #fff;
+}
+
+.socials-facebook-group-likebutton {
+	background-color: #fff;
+	height: 23px;
+	width: 92px;
+    box-shadow: 0 0 1px 1px rgba(1,1,1,0.2);
+    position: absolute;
+    left: 9px;
+    top: 93px;
+}
+
+.socials-facebook-group-likebutton::before, .socials-facebook-group-sharebutton::before {
+	content: '';
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.socials-facebook-group-likebutton-icon, .socials-facebook-group-sharebutton-icon {
+	vertical-align: middle;
+	margin: 0 5px 0 8px;
+}
+
+.socials-facebook-group-likebutton-text, .socials-facebook-group-sharebutton-text {
+	text-transform: capitalize;
+    color: #4b4f56;
+	font: bold 12px/23px "Helvetica LT Std", sans-serif;
+	vertical-align: middle;
+}
+
+.socials-facebook-group-sharebutton {
+	background-color: #fff;
+	height: 23px;
+	width: 92px;
+    box-shadow: 0 0 1px 1px rgba(1,1,1,0.2);
+    position: absolute;
+    right: 9px;
+    top: 93px;
+}
+
+.socials-facebook-group-friendlist-wrapper {
+	position: relative;
+	top: 79px;
+	margin: 0 auto;
+	width: 340px;
+	padding: 8px;
+    box-sizing: border-box;
+	background-color: #f6f7f9;
+}
+
+.socials-facebook-group-friendlist {
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.13);
+	background-color: #fff;
+	border-radius: 1px;
+	padding: 8px;
+}
+
+.socials-facebook-group-friendlist-title {
+	color: #4b4f56;
+	font-size: 12px;
+	font-family: "Helvetica LT Std", sans-serif;
+	margin-bottom: 7px;
+}
+
+.socials-facebook-group-friendlist-users {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.socials-facebook-group-friendlist-users::after {
+	content: '';
+	display: table;
+	clear: left;
+}
+
+.socials-facebook-group-friendlist-user {
+	float: left;
+    margin-right: 2px;
+}
+
+.socials-facebook-group-friendlist-user:last-child {
+	margin-right: 0;
 }
