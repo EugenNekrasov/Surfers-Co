@@ -1,232 +1,300 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Surfers Co. is a study site created for educational purposes.">
-	<meta name="keywords" content="surfing, surfboards, shop">
-	<link rel="stylesheet" href="styles.css">
-	<title>Surfers Co.</title>
-</head>
-<body>
-	<div class="wrapper">
-		<div class="header">
-			<span class="logo">Surfers Co.</span>
-			<span class="navigation">
-				<span class="navigation-item"><a href="#">Boards</a></span>
-				<span class="navigation-item"><a href="#">Accesories</a></span>
-				<span class="navigation-item"><a href="#">Blog</a></span>
-				<span class="navigation-item"><a href="#">Technology</a></span>
-				<span class="navigation-item"><a href="#">Team</a></span>
-				<span class="navigation-item"><a href="#">Dealers</a></span>
-			</span>
-			<span class="social-buttons">
-				<a href="#" class="social-button">
-					<img src="images/FB-Logo-mono.png" alt="facebook">
-				</a>
-				<a href="#" class="social-button">
-					<img src="images/Instagram-Logo-mono.png" alt="instagram">
-				</a>
-				<a href="#" class="social-button">
-					<img src="images/Email-Logo-mono.png" alt="e-mail">
-				</a>
-			</span>
-		</div>
-		<div class="content">
-			<div class="slogan">
-				<h1>Ride every wave as if it's your last</h1>
-				<h2 class="subslogan">We love the motion of the ocean</h2>
-			</div>
-			<div class="surfboards">
-				<img src="images/Surfboards.png" alt="Surfboard">
-				<ul class="surfboard-previews">
-					<li><img class="surfboard-preview selected" src="images/Surfboards1.jpg" alt="Surfboard1"></li>
-					<li><img class="surfboard-preview" src="images/Surfboards2.jpg" alt="Surfboard2"></li>
-					<li><img class="surfboard-preview" src="images/Surfboards3.jpg" alt="Surfboard3"></li>
-					<li><img class="surfboard-preview" src="images/Surfboards4.jpg" alt="Surfboard4"></li>
-				</ul>
-				<div class="surfboard-title">JR Surfoards The Donny Stoker Yellow/Green Rail Fade</div>
-				<div class="rating">
-					<div class="stars">
-						<img src="images/Star-on.png" alt="1 star">
-						<img src="images/Star-on.png" alt="2 stars">
-						<img src="images/Star-on.png" alt="3 stars">
-						<img src="images/Star-on.png" alt="4 stars">
-						<img src="images/Star-off.png" alt="5 stars">
-					</div>
-					<div class="rating-total">52</div>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Surfers Co. is a study site created for educational purposes.">
+		<meta name="keywords" content="surfing, surfboards, shop">
+		<link rel="stylesheet" href="styles.css">
+		<title>Surfers Co.</title>
+	</head>
+
+	<body>
+		<header class="header wrapper">
+			<div class="logo">Surfers Co.</div>
+			<ul class="navigation">
+				<li class="navigation-item">
+					<a href="#">Boards</a>
+				</li>
+				<li class="navigation-item">
+					<a href="#">Accesories</a>
+				</li>
+				<li class="navigation-item">
+					<a href="#">Blog</a>
+				</li>
+				<li class="navigation-item">
+					<a href="#">Technology</a>
+				</li>
+				<li class="navigation-item">
+					<a href="#">Team</a>
+				</li>
+				<li class="navigation-item">
+					<a href="#">Dealers</a>
+				</li>
+			</ul>
+			<ul class="social-buttons">
+				<li class="social-button	">
+					<a href="#" class="social-button">
+						<img src="images/FB-Logo-mono.png" alt="facebook">
+					</a>
+				</li>
+				<li class="social-button	">
+					<a href="#" class="social-button">
+						<img src="images/Instagram-Logo-mono.png" alt="instagram">
+					</a>
+				</li>
+				<li class="social-button	">
+					<a href="#" class="social-button">
+						<img src="images/Email-Logo-mono.png" alt="e-mail">
+					</a>
+				</li>
+			</ul>
+		</header>
+		<main>
+			<section class="slogan wrapper">
+				<h1 class="slogan-title">Ride every wave as if it's your last</h1>
+				<h2 class="slogan-subtitle">We love the motion of the ocean</h2>
+			</section>
+			<section class="product wrapper">
+				<div class="product-view">
+					<img class="product-view-photo" src="images/Surfboards.png" width="425" height="550" alt="Product photo">
+					<ul class="product-view-previews">
+						<li class="product-view-previews-item product-view-previews-item_selected">
+							<img src="images/Surfboards1.jpg" alt="Preview 1">
+						</li>
+						<li class="product-view-previews-item">
+							<img src="images/Surfboards2.jpg" alt="Preview 2">
+						</li>
+						<li class="product-view-previews-item">
+							<img src="images/Surfboards3.jpg" alt="Preview 3">
+						</li>
+						<li class="product-view-previews-item">
+							<img src="images/Surfboards4.jpg" alt="Preview 4">
+						</li>
+					</ul>
 				</div>
-				<div class="surfboard-scroll">
-						<svg class="surfboard-arrow">
+				<article class="product-description">
+					<h3 class="product-description-headline headline">Boards</h3>
+					<h4 class="product-description-title">JR Surfoards The Donny Stoker<br>Yellow/Green Rail Fade</h4>
+					<ul class="product-description-rating">
+						<li class="product-description-rating-item_enabled"></li>
+						<li class="product-description-rating-item_enabled"></li>
+						<li class="product-description-rating-item_enabled"></li>
+						<li class="product-description-rating-item_enabled"></li>
+						<li class="product-description-rating-item_disabled"></li>
+					</ul>
+					<ul class="product-description-tabs">
+						<li class="product-description-tabs-item_selected">Description</li>
+						<li class="product-description-tabs-item">Features</li>
+						<li class="product-description-tabs-item">Dimensions</li>
+					</ul>
+					<p class="product-description-tab-content">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design
+						from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+					<strong class="product-description-price">$499.99</strong>
+					<a class="product-description-buy" href="#">Buy now</a>
+					<a class="product-description-all link" href="#">View all boards</a>
+					<div class="product-description-scroll">
+						<svg class="product-description-arrow">
 							<polyline points="18,25 11,19 18,13"/>
 							<line x1="11" y1="19" x2="27" y2="19"/>
 						</svg>
-						<svg class="surfboard-arrow">
+						<svg class="product-description-arrow">
 							<polyline points="20,25 27,19 20,13"/>
 							<line x1="11" y1="19" x2="27" y2="19"/>
 						</svg>
+					</div>
+					<div class="product-description-page-counter">05/25</div>
+				</article>
+			</section>
+			<section class="about-us">
+				<div class="wrapper">
+					<h3 class="about-us-headline headline">About us</h3>
+					<article class="about-us-container">
+						<h4 class="about-us-title">We are surfers co.</h4>
+						<svg class="about-us-delimiter">
+							<line x1="0" y1="0" x2="13" y2="13"/>
+							<line x1="0" y1="13" x2="13" y2="0"/>
+						</svg>
+						<div class="about-us-description">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle
+							sollicitudin ut. Nullam tincidun finibustus scelerisque.
+						</div>
+						<a class="about-us-read-more link" href="#">Read more</a>
+					</article>
+					<img src="images/video-preview.jpg" alt="video preview" class="about-us-preview">
 				</div>
-				<div class="page-counter">05/25</div>
-				<ul class="surfboard-tabs">
-					<li class="selected">Description</li>
-					<li>Features</li>
-					<li>Dimensions</li>
-				</ul>
-				<div class="surfboard-tab-content">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</div>
-				<div class="surfboard-price">$499.99</div>
-				<div class="surfboard-buy">Buy now</div>
-				<div class="surfboard-all link">View all boards</div>
-			</div>
-			<div class="about-us">
-				<h3>We are surfers co.</h3>
-				<svg class="about-us-delimiter">
-					<line x1="0" y1="0" x2="13" y2="13"/>
-					<line x1="0" y1="13" x2="13" y2="0"/>
+			</section>
+			<section class="our-team wrapper">
+				<h3 class="our-team-headline headline">Our team</h3>
+				<svg class="our-team-arrow left">
+					<polyline points="18,25 11,19 18,13"/>
+					<line x1="11" y1="19" x2="27" y2="19"/>
 				</svg>
-				<div class="about-us-description">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</div>
-				<div class="about-us-read-more link">Read more</div>
-				<img src="images/video-preview.jpg" alt="video preview" class="about-us-preview">
-			</div>
-			<div class="our-team">
-				<div class="our-team-arrow left">
-					<svg>
-						<polyline points="18,25 11,19 18,13"/>
-						<line x1="11" y1="19" x2="27" y2="19"/>
-					</svg>
-				</div>
-				<div class="our-team-card">
-					<img class="our-team-card-avatar" src="images/Avatar1.jpg" alt="profile photo 1">
-					<div class="our-team-card-name">Taj Burrow</div>
-					<div class="our-team-card-nickname">@taramos</div>
-					<img class="our-team-card-delimiter" src="images/Waves.png" alt="delimiter">
-					<div class="our-team-card-location">Yallingup, Australia</div>
-				</div>
-				<div class="our-team-card">
-					<img class="our-team-card-avatar" src="images/Avatar2.jpg" alt="profile photo 1">
-					<div class="our-team-card-name">Malia Manuel</div>
-					<div class="our-team-card-nickname">@maliamanuel</div>
-					<img class="our-team-card-delimiter" src="images/Waves.png" alt="delimiter">
-					<div class="our-team-card-location">Wailua, Hi</div>
-				</div>
-				<div class="our-team-card">
-					<img class="our-team-card-avatar" src="images/Avatar3.jpg" alt="profile photo 1">
-					<div class="our-team-card-name">Ian Walsh</div>
-					<div class="our-team-card-nickname">@ian.walsh</div>
-					<img class="our-team-card-delimiter" src="images/Waves.png" alt="delimiter">
-					<div class="our-team-card-location">Maui, Hi</div>
-				</div>
-				<div class="our-team-card">
-					<img class="our-team-card-avatar" src="images/Avatar4.jpg" alt="profile photo 1">
-					<div class="our-team-card-name">Macy Callaghan</div>
-					<div class="our-team-card-nickname">@macyjanecallaghan</div>
-					<img class="our-team-card-delimiter" src="images/Waves.png" alt="delimiter">
-					<div class="our-team-card-location">San-Clemente, CA</div>
-				</div>
-				<div class="our-team-arrow right">
-					<svg>
-						<polyline points="20,25 27,19 20,13"/>
-						<line x1="11" y1="19" x2="27" y2="19"/>
-					</svg>
-				</div>
-			</div>
-			<div class="blog">
-				<h3 class="blog-title">latest updates</h3>
+				<article class="our-team-teammate">
+					<a class="our-team-teammate-link" href="#">
+						<img class="our-team-teammate-avatar" src="images/Avatar1.jpg" alt="profile photo 1">
+						<h4 class="our-team-teammate-name">Taj Burrow</h4>
+						<div class="our-team-teammate-nickname">@taramos</div>
+						<img class="our-team-teammate-delimiter" src="images/Waves.png" alt="delimiter">
+						<div class="our-team-teammate-location">Yallingup, Australia</div>
+					</a>
+				</article>
+				<article class="our-team-teammate">
+					<a class="our-team-teammate-link" href="#">
+						<img class="our-team-teammate-avatar" src="images/Avatar2.jpg" alt="profile photo 1">
+						<h4 class="our-team-teammate-name">Malia Manuel</h4>
+						<div class="our-team-teammate-nickname">@maliamanuel</div>
+						<img class="our-team-teammate-delimiter" src="images/Waves.png" alt="delimiter">
+						<div class="our-team-teammate-location">Wailua, Hi</div>
+					</a>
+				</article>
+				<article class="our-team-teammate">
+					<a class="our-team-teammate-link" href="#">
+						<img class="our-team-teammate-avatar" src="images/Avatar3.jpg" alt="profile photo 1">
+						<h4 class="our-team-teammate-name">Ian Walsh</h4>
+						<div class="our-team-teammate-nickname">@ian.walsh</div>
+						<img class="our-team-teammate-delimiter" src="images/Waves.png" alt="delimiter">
+						<div class="our-team-teammate-location">Maui, Hi</div>
+					</a>
+				</article>
+				<article class="our-team-teammate">
+					<a class="our-team-teammate-link" href="#">
+						<img class="our-team-teammate-avatar" src="images/Avatar4.jpg" alt="profile photo 1">
+						<h4 class="our-team-teammate-name">Macy Callaghan</h4>
+						<div class="our-team-teammate-nickname">@macyjanecallaghan</div>
+						<img class="our-team-teammate-delimiter" src="images/Waves.png" alt="delimiter">
+						<div class="our-team-teammate-location">San-Clemente, CA</div>
+					</a>
+				</article>
+				<svg class="our-team-arrow right">
+					<polyline points="20,25 27,19 20,13"/>
+					<line x1="11" y1="19" x2="27" y2="19"/>
+				</svg>
+			</section>
+			<section class="blog wrapper">
+				<h4 class="blog-title">latest updates</h4>
 				<svg class="blog-title-delimiter">
 					<line x1="0" y1="0" x2="13" y2="13"/>
 					<line x1="0" y1="13" x2="13" y2="0"/>
 				</svg>
-				<ul class="blog-gallery">
-					<li class="blog-gallery-item">
-						<div class="blog-gallery-item-gradient">
-							<img src="images/Post1.jpg" alt="Blog post picture 1" class="blog-gallery-item-image">
-						</div>
-						<div class="blog-gallery-item-description">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</div>
-					</li>
-					<li class="blog-gallery-item">
-						<div class="blog-gallery-item-gradient">
-							<img src="images/Post2.jpg" alt="Blog post picture 2" class="blog-gallery-item-image">
-						</div>
-						<div class="blog-gallery-item-description">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</div>
-					</li>
-					<li class="blog-gallery-item">
-						<div class="blog-gallery-item-gradient">
-							<img src="images/Post3.jpg" alt="Blog post picture 3" class="blog-gallery-item-image">
-						</div>
-						<div class="blog-gallery-item-description">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</div>
-					</li>
-				</ul>
-				<div class="blog-button-gallery">view all posts</div>
-			</div>
-			<div class="socials">
-				<div class="socials-instagram">
-					<div class="socials-instagram-gallery">
-						<img src="images/InstagramPhoto1.jpg" alt="Instagram photo 1" class="socials-instagram-gallery-item">
-						<img src="images/InstagramPhoto2.jpg" alt="Instagram photo 2" class="socials-instagram-gallery-item">
-						<img src="images/InstagramPhoto3.jpg" alt="Instagram photo 3" class="socials-instagram-gallery-item">
-						<img src="images/InstagramPhoto4.jpg" alt="Instagram photo 4" class="socials-instagram-gallery-item">
+				<a href="#" class="blog-gallery-item">
+					<div class="blog-gallery-item-gradient">
+						<img src="images/Post1.jpg" alt="Blog post picture 1" class="blog-gallery-item-image">
 					</div>
-					<div class="socials-instagram-footer">
-						<img src="images/Logo-Instagram.png" alt="Instagram logo" class="socials-instagram-footer-logo">
-						<span class="socials-instagram-footer-slogan">follow us</span>
-						<span class="socials-instagram-footer-nickname">@surferco</span>
+					<div class="blog-gallery-item-description">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</div>
+				</a>
+				<a href="#" class="blog-gallery-item">
+					<div class="blog-gallery-item-gradient">
+						<img src="images/Post2.jpg" alt="Blog post picture 2" class="blog-gallery-item-image">
 					</div>
-				</div>
-				<div class="socials-facebook">
-					<img src="images/Logo-Facebook.png" alt="Facebook logo" class="socials-facebook-logo">
+					<div class="blog-gallery-item-description">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</div>
+				</a>
+				<a href="#" class="blog-gallery-item">
+					<div class="blog-gallery-item-gradient">
+						<img src="images/Post3.jpg" alt="Blog post picture 3" class="blog-gallery-item-image">
+					</div>
+					<div class="blog-gallery-item-description">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</div>
+				</a>
+				<a class="blog-button-gallery" href="#">view all posts</a>
+			</section>
+			<section class="socials wrapper">
+				<section class="socials-instagram">
+					<h3 class="socials-instagram-headline headline">instagram</h3>
+					<a class="socials-instagram-link" href="#">
+						<div class="socials-instagram-gallery">
+							<img src="images/InstagramPhoto1.jpg" alt="Instagram photo 1" class="socials-instagram-gallery-item">
+							<img src="images/InstagramPhoto2.jpg" alt="Instagram photo 2" class="socials-instagram-gallery-item">
+							<img src="images/InstagramPhoto3.jpg" alt="Instagram photo 3" class="socials-instagram-gallery-item">
+							<img src="images/InstagramPhoto4.jpg" alt="Instagram photo 4" class="socials-instagram-gallery-item">
+						</div>
+						<footer class="socials-instagram-footer">
+							<img src="images/Logo-Instagram.png" alt="Instagram logo" class="socials-instagram-footer-logo">
+							<span class="socials-instagram-footer-slogan">follow us</span>
+							<span class="socials-instagram-footer-nickname">@surferco</span>
+						</footer>
+					</a>
+				</section>
+				<section class="socials-facebook">
+					<a class="socials-facebook-logo" href="#"></a>
 					<div class="socials-facebook-group">
-						<img src="images/Profile-photo.jpg" alt="Profile photo" class="socials-facebook-group-photo">
-						<div class="socials-facebook-group-title">Surfers Co.</div>
-						<div class="socials-facebook-group-likes">52,000 likes</div>
-						<div class="socials-facebook-group-likebutton">
-							<img class="socials-facebook-group-likebutton-icon" src="images/FB-icon.jpg" alt="Facebook icon"><span class="socials-facebook-group-likebutton-text">Like page</span>
-						</div>
-						<div class="socials-facebook-group-sharebutton">
-							<img class="socials-facebook-group-sharebutton-icon" src="images/Share-icon.png" alt="sharing icon"><span class="socials-facebook-group-sharebutton-text">Share</span>
-						</div>
-						<div class="socials-facebook-group-friendlist-wrapper">
-							<div class="socials-facebook-group-friendlist">
-								<div class="socials-facebook-group-friendlist-title">You and 8 friends like this</div>
-								<ul class="socials-facebook-group-friendlist-users">
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user1.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user2.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user3.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user4.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user5.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user6.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user7.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user8.jpg" alt="User photo"></li>
-									<li class="socials-facebook-group-friendlist-user"><img src="images/user9.jpg" alt="User photo"></li>
-								</ul>
-							</div>
+						<a href="#">
+							<img src="images/Profile-photo.jpg" alt="Profile photo" class="socials-facebook-group-photo">
+							<div class="socials-facebook-group-title">Surfers Co.</div>
+							<div class="socials-facebook-group-likes clearfix">52,000 likes</div>
+						</a>
+						<a class="socials-facebook-group-likebutton" href="#">Like page</a>
+						<a class="socials-facebook-group-sharebutton" href="#">Share</a>
+						<div class="socials-facebook-group-friendlist">
+							<div class="socials-facebook-group-friendlist-title">You and 8 friends like this</div>
+							<ul class="socials-facebook-group-friendlist-users">
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user1.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user2.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user3.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user4.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user5.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user6.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user7.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user8.jpg" alt="User photo"></a>
+								</li>
+								<li class="socials-facebook-group-friendlist-user">
+									<a href="#"><img src="images/user9.jpg" alt="User photo"></a>
+								</li>
+							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="footer-wrapper">
-			<div class="footer-copyright">
-				© 2017 Surfers Co. <span class="footer-copyright-bullet">●</span> Design by @lucaalco
-			</div>
-			<div class="footer-nav">
-				<ul class="footer-nav-items">
-					<li class="footer-nav-item"><a href="#">About</a></li>
-					<li class="footer-nav-item"><a href="#">Boards</a></li>
-					<li class="footer-nav-item"><a href="#">Accessories</a></li>
-					<li class="footer-nav-item"><a href="#">Blog</a></li>
-					<li class="footer-nav-item"><a href="#">Technology</a></li>
-					<li class="footer-nav-item"><a href="#">Team</a></li>
-					<li class="footer-nav-item"><a href="#">Dealers</a></li>
-					<li class="footer-nav-item"><a href="#">Contact us</a></li>
+				</section>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer-copyright">© 2017 Surfers Co. &nbsp; ● &nbsp; Design by @lucaalco</div>
+				<ul class="footer-nav">
+					<li class="footer-nav-item">
+						<a href="#">About</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Boards</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Accessories</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Blog</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Technology</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Team</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Dealers</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">Contact us</a>
+					</li>
 				</ul>
+				<form class="footer-subscribe">
+					<label class="footer-subscribe-title" for="user_email">Subscribe to our newsletter</label>
+					<input class="footer-subscribe-textbox" id="user_email" type="email" placeholder="Your e-mail" size="23">
+					<input class="footer-subscribe-submit" type="submit" value="">
+				</form>
 			</div>
-			<div class="footer-subscribe">
-				<div class="footer-subscribe-title">Subscribe to our newsletter</div>
-				<input type="email" class="footer-subscribe-textbox" placeholder="Your e-mail" size="23">
-				<input type="submit" class="footer-subscribe-submit" value="">
-			</div>
-		</div>
-	</div>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+		</footer>
+	</body>
+
 </html>

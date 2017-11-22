@@ -1,777 +1,785 @@
 body {
-	margin: 0;
-	padding: 0;
-	background-image: url("images/header-background.jpg"), url("images/about-us-background.jpg");
-	background-position-y: 0, 1300px;
-	background-repeat: no-repeat;
+  background-image: url("images/header-background.jpg");
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-	font-size: 50px;
-	font-weight: normal;
-}
-
-h2 {
-	font-size: 24px;
-	font-weight: normal;
-}
-
-.logo {
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	display: inline;
-	font-family: "Montserrat";
-	font-size: 32px;
-	font-weight: bold;
-	margin: 0;
-	float: left;
+main {
+  position: relative;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
-.content {
-	position: relative;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper, .footer-wrapper {
-	margin: 20px auto;
-	width: 1100px;
-	position: relative;
-}
-
-.header {
-	text-align: center;
-}
-
-.navigation {
-	line-height: 45px;
-}
-
-.navigation-item {
-	margin-right: 10px;
-}
-
-.navigation-item a {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #000;
-	font-family: "Montserrat";
-	font-size: 14px;
-	padding: 5px 7px 5px 7px;
-}
-
-.navigation-item a:hover {
-	color: #fff;
-	background-color: #00b0ff;
-}
-
-.social-buttons {
-	float: right;
-}
-
-.social-button {
-	display: inline-block;
-	background-color: #fff;
-	border-radius: 50%;
-	height: 36px;
-	width: 36px;
-	text-align: center;
-	line-height: 39px;
-}
-
-.slogan {
-	font-family: "Playfair Display";
-	font-style: italic;
-	text-align: center;
-	margin-top: 122px;
-	margin-bottom: 122px;
-}
-
-.subslogan {
-	color: #fff;
-}
-
-.surfboards {
-	position: relative;
-	height: 600px;
-	width: 1030px;
-	background-color: #fff;
-	background-image: linear-gradient(130deg, #00d2ff 33%, transparent 33%);
-	box-shadow: 10px -10px 50px 0 rgba(0,0,0,0.32);
-}
-
-.surfboards > img {
-	padding-top: 35px;
-	padding-left: 28px;
-}
-
-.surfboard-previews {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	position: absolute;
-	top: 157px;
-	left: 470px;
-}
-
-.surfboard-previews li {
-	margin-bottom: 3px;
-}
-
-.surfboard-previews li:last-child {
-	margin-bottom: 0;
-}
-
-.surfboard-preview {
-	border: 1px solid #ccc;
-}
-
-.surfboard-preview.selected, .surfboard-preview:hover{
-	outline: 2px solid #00b0ff;
-	outline-offset: -2px;
-}
-
-.surfboard-title {
-	font: bold 20px/26px "Montserrat", sans-serif;
-	width: 335px;
-	height: 50px;
-	position: absolute;
-	top: 45px;
-	left: 595px;
-}
-
-.rating {
-	position: absolute;
-	top: 100px;
-	left: 595px;
-}
-
-.stars {
-	display: inline-block;
-}
-
-.rating-total {
-	font: bold 12px "Montserrat", sans-serif;
-	color: #787878;
-	display: inline-block;
-	position: relative;
-	top: -2px;
-}
-
-.rating-total:before {
-	content: "(";
-}
-
-.rating-total:after {
-	content: ")";
-}
-
-.surfboard-scroll {
-	position: absolute;
-    top: 50px;
-    right: -38px;
-	width: 76px;
-}
-
-.surfboard-arrow {
-	background-color: #f2d800;
-	width: 38px;
-	height: 38px;
-	fill: none;
-	stroke: #fff;
-	stroke-width: 2;
-	float: left;
-}
-
-.surfboard-arrow:hover {
-	stroke: #000;
-}
-
-.page-counter {
-	position: absolute;
-	width: 58px;
-	height: 38px;
-	top: 88px;
-	right: 0;
-	color: #fff;
-	background-color: #000;
-	text-align: center;
-	font: 14px/38px "Montserrat", sans-serif;
-}
-
-.surfboard-tabs {
-	position: absolute;
-	top: 155px;
-	left: 595px;
-	height: 25px;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	border-bottom: 1px solid #a0a0a0;
-}
-
-.surfboard-tabs li {
-	display: inline;
-	text-transform: uppercase;
-	font: bold 14px/25px "Raleway", sans-serif;
-	margin-right: 30px;
-	padding-bottom: 3px;
-	color: #a0a0a0;
-}
-
-.surfboard-tabs li.selected {
-	border-bottom: 3px solid #00b0ff;
-	color: #000;
-}
-
-.surfboard-tab-content {
-	position: absolute;
-	left: 595px;
-	top: 205px;
-	width: 400px;
-	height: 170px;
-	font: 16px/24px "Raleway", sans-serif;
-	color: #787878;
-}
-
-.surfboard-price {
-	position: absolute;
-	left: 595px;
-	top: 405px;
-	width: 120px;
-	height: 45px;
-	margin-right: 5px;
-	color: #000;
-	font: bold 24px/45px "Montserrat", sans-serif;
-}
-
-.surfboard-buy {
-	position: absolute;
-	left: 720px;
-	top: 405px;
-	width: 140px;
-	height: 45px;
-	background-color: #00b0ff;
-	color: #fff;
-	font: bold 14px/45px "Montserrat", sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.surfboard-buy:hover {
-	color: #000;
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .link {
-	color: #00b0ff;
-	font: 16px/22px "Montserrat", sans-serif;
-	border-bottom: 2px solid #00b0ff;
-	padding-bottom: 3px;
+  border-bottom: 2px solid #00b0ff;
+  color: #00b0ff;
+  font: 16px/22px "Montserrat", sans-serif;
+  padding-bottom: 3px;
 }
 
-.surfboard-all {
-	position: absolute;
-	bottom: 70px;
-	left: 595px;
-	height: 22px;
-	width: 125px;
+.headline {
+  font: bold 127px/127px "Montserrat", sans-serif;
+  letter-spacing: 10px;
+  margin: 0;
+  opacity: 0.015;
+  position: absolute;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo {
+  float: left;
+  font: bold 32px/36px "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 1100px;
+}
+
+.header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navigation {
+  display: inline-block;
+  line-height: 36px;
+}
+
+.navigation-item {
+  display: inline;
+}
+
+.navigation-item a {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 0 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-item a:hover {
+  background-color: #00b0ff;
+  color: #fff;
+}
+
+.social-buttons {
+  float: right;
+}
+
+.social-button {
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 36px;
+  line-height: 39px;
+  width: 36px;
+}
+
+.slogan {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  margin-top: 122px;
+  text-align: center;
+}
+
+.slogan-title {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.slogan-subtitle {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.product {
+  background: #fff linear-gradient(130deg, #00d2ff 33%, transparent 33%) -25px no-repeat;
+  box-shadow: 10px -10px 50px 0 rgba(0, 0, 0, 0.32);
+  height: 600px;
+  margin-top: 122px;
+}
+
+.product-view {
+  float: left;
+  height: 100%;
+}
+
+.product-view::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.product-view-photo {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+.product-view-previews {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+}
+
+.product-view-previews-item {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.product-view-previews-item:last-child {
+  margin-bottom: 0;
+}
+
+.product-view-previews-item:hover,
+.product-view-previews-item_selected {
+  outline: 2px solid #00b0ff;
+  outline-offset: -2px;
+}
+
+.product-view-previews-item img {
+  display: block;
+}
+
+.product-description {
+  overflow: hidden;
+  padding: 45px 50px 0 60px;
+}
+
+.product-description-headline {
+  bottom: -135px;
+  right: -510px;
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+}
+
+.product-description-title {
+  font: bold 20px/26px "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.product-description-rating {
+  margin: 5px 0 0;
+}
+
+.product-description-rating::after {
+  color: #787878;
+  content: "(52)";
+  display: inline-block;
+  font: bold 12px "Montserrat", sans-serif;
+  position: relative;
+  top: -2px;
+}
+
+.product-description-rating li {
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+}
+
+.product-description-rating-item_enabled {
+  background-image: url("images/Star-on.png");
+}
+
+.product-description-rating-item_disabled {
+  background-image: url("images/Star-off.png");
+}
+
+.product-description-tabs {
+  border-bottom: 1px solid #a0a0a0;
+  margin: 45px 0 0;
+}
+
+.product-description-tabs-item,
+.product-description-tabs-item_selected {
+  color: #a0a0a0;
+  cursor: pointer;
+  display: inline;
+  font: bold 14px/25px "Raleway", sans-serif;
+  margin-right: 30px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.product-description-tabs-item:hover,
+.product-description-tabs-item_selected {
+  border-bottom: 3px solid #00b0ff;
+  color: #000;
+}
+
+.product-description-tab-content {
+  color: #787878;
+  font: 18.3px/24px "Raleway", sans-serif;
+  margin: 15px 0 30px;
+}
+
+.product-description-price {
+  color: #000;
+  font: bold 24px/45px "Montserrat", sans-serif;
+}
+
+.product-description-buy {
+  background-color: #00b0ff;
+  color: #fff;
+  font: bold 14px/45px "Montserrat", sans-serif;
+  margin-left: 30px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product-description-buy:hover {
+  color: #000;
+}
+
+.product-description-all {
+  display: block;
+  margin-top: 70px;
+  width: fit-content;
+}
+
+.product-description-scroll {
+  position: absolute;
+  right: -38px;
+  top: 50px;
+}
+
+.product-description-arrow {
+  background-color: #f2d800;
+  fill: none;
+  float: left;
+  height: 38px;
+  stroke: #fff;
+  stroke-width: 2;
+  width: 38px;
+}
+
+.product-description-arrow:hover {
+  stroke: #000;
+}
+
+.product-description-page-counter {
+  background-color: #000;
+  color: #fff;
+  font: 14px/38px "Montserrat", sans-serif;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 88px;
 }
 
 .about-us {
-	position: relative;
-	margin-top: 590px;
-	width: 345px;
-	text-align: center;
-	background-color: #fff;
-	padding: 100px 130px 0 100px;
+  background: url("images/about-us-background.jpg") no-repeat;
+  margin-top: 290px;
 }
 
-.about-us:before {
-	content: '';
-    background-color: #fff;
-    height: 310px;
-    width: 500px;
-    position: absolute;
-    top: 0px;
-    left: -500px;
+.about-us-container {
+  background-color: #fff;
+  box-sizing: content-box;
+  color: #000;
+  display: inline-block;
+  margin-top: 290px;
+  padding: 90px 130px 0 35px;
+  position: relative;
+  vertical-align: top;
+  width: 345px;
 }
 
-.about-us h3 {
-	font: normal 18px "Montserrat", sans-serif;
-	color: #000;
-	text-transform: uppercase;
+.about-us-container:before {
+  background-color: #fff;
+  content: '';
+  height: 100%;
+  left: -1000px;
+  position: absolute;
+  top: 0;
+  width: 1000px;
+}
+
+.about-us-headline {
+  font-size: 196px;
+  left: -60px;
+  line-height: 196px;
+  top: -150px;
+  z-index: -1;
+}
+
+.about-us-title {
+  font: normal 18px "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .about-us-delimiter {
-	stroke: #000;
-	stroke-width: 2px;
-	width: 13px;
-	height: 13px;
+  display: block;
+  height: 13px;
+  margin: auto;
+  stroke: #000;
+  stroke-width: 2px;
+  width: 13px;
 }
 
 .about-us-description {
-	font: italic 22px/38px "Playfair Display", "Times New Roman";
-	color: #000;
-	text-align: initial;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.about-us-read-more {
-	text-align: initial;
-	width: 90px;
+  font: italic 22px/38px "Playfair Display", "Times New Roman";
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: initial;
 }
 
 .about-us-preview {
-	display: inline-block;
-	position: absolute;
-	top: 210px;
-	left: 615px;
-	box-shadow: 20px 20px 50px 5px rgba(0,0,0,0.32);
+  box-shadow: 20px 20px 50px 5px rgba(0, 0, 0, 0.32);
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 550px;
 }
 
 .our-team {
-	position: relative;
-	margin-top: 250px;
-	text-align: center;
+  margin-top: 250px;
+  text-align: center;
 }
 
-.our-team-card {
-	border-radius: 4px;
-	box-shadow: 20px 20px 50px 5px rgba(0,0,0,0.32);
-	width: 260px;
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	background-color: #fff;
-	padding: 30px 0 50px 0;
+.our-team-headline {
+  font-size: 190px;
+  line-height: 190px;
+  top: -150px;
 }
 
-.our-team-card:not(:first-child) {
-	margin-left: -20px;
+.our-team-teammate {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  width: 260px;
 }
 
-.our-team-card:nth-child(odd) {
-	top: 20px;
-	z-index: 1;
+.our-team-teammate:not(:first-child) {
+  margin-left: -20px;
 }
 
-.our-team-card-name {
-	color: #00b0ff;
-	font: 18px 'Montserrat', sans-serif;
+.our-team-teammate:nth-child(even) {
+  top: 20px;
+  z-index: 1;
 }
 
-.our-team-card-avatar {
-	margin-bottom: 10px;
-	width: 100px;
-    height: 100px;
-    border-radius: 50%;
-	border: 2px solid #fff;
+.our-team-teammate-link {
+  display: block;
+  padding: 30px 0 50px;
 }
 
-.our-team-card-nickname, .our-team-card-location {
-	color: #8c8c8c;
-	font: 14px "Raleway", sans-serif;
+.our-team-teammate-name {
+  color: #00b0ff;
+  font: 18px 'Montserrat', sans-serif;
+  margin: 0;
 }
 
-.our-team-card-delimiter {
-	margin: 15px 0 10px 0;
+.our-team-teammate-avatar {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+  height: 100px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
-.our-team-card-location::before {
-	content: url('images/Pin-icon.png');
-	margin-right: 5px;
+.our-team-teammate-location,
+.our-team-teammate-nickname {
+  color: #8c8c8c;
+  font: 14px "Raleway", sans-serif;
 }
 
-.our-team-card:hover {
-	background-color: #00b0ff;
+.our-team-teammate-delimiter {
+  margin: 15px 0 10px;
 }
 
-.our-team-card:hover .our-team-card-name, .our-team-card:hover .our-team-card-nickname, .our-team-card:hover .our-team-card-location {
-	color:  #fff;
+.our-team-teammate-location::before {
+  content: url("images/Pin-icon.png");
+  margin-right: 5px;
 }
 
-.our-team-card:hover .our-team-card-delimiter {
-	content: url('images/WavesSelected.png');
+.our-team-teammate:hover {
+  background-color: #00b0ff;
 }
 
-.our-team-card:hover .our-team-card-location::before {
-	content: url('images/Pin-icon-selected.png');
+.our-team-teammate:hover .our-team-teammate-location,
+.our-team-teammate:hover .our-team-teammate-name,
+.our-team-teammate:hover .our-team-teammate-nickname {
+  color: #fff;
+}
+
+.our-team-teammate:hover .our-team-teammate-delimiter {
+  content: url("images/WavesSelected.png");
+}
+
+.our-team-teammate:hover .our-team-teammate-location::before {
+  content: url("images/Pin-icon-selected.png");
 }
 
 .our-team-arrow {
-	border: 2px solid #646464;
-	position: absolute;
-	top: 130px;
-	width: 50px;
-	height: 50px;
-	background-color: #fff;
-	border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #646464;
+  border-radius: 50%;
+  box-sizing: content-box;
+  fill: none;
+  height: 38px;
+  position: absolute;
+  stroke: #646464;
+  stroke-width: 2;
+  top: 130px;
+  width: 38px;
 }
 
 .our-team-arrow:hover {
-	border: 2px solid #fff;
-	box-shadow: 0 0 25px 0 rgba(0,0,0,0.32);
+  border: 2px solid transparent;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.16);
+  stroke: #0022ff;
 }
 
-.our-team-arrow.left {
-	left: -36px;
+.left {
+  left: -25px;
 }
 
-.our-team-arrow.right {
-	right: -16px;
-}
-
-.our-team-arrow svg {
-	fill: none;
-	stroke: #646464;
-	stroke-width: 2;
-	width: 38px;
-	height: 38px;
-	margin-top: 6px;
-}
-
-.our-team-arrow:hover svg {
-	stroke: #0022ff;
+.right {
+  right: -5px;
 }
 
 .blog {
-	text-align: center;
-	margin-top: 210px;
-	margin-bottom: 700px;
+  margin-top: 210px;
+  text-align: center;
 }
 
 .blog-title {
-	font: normal 18px "Montserrat", sans-serif;
-	color: #000;
-	text-transform: uppercase;
+  color: #000;
+  font: normal 18px "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .blog-title-delimiter {
-	stroke: #000;
-	stroke-width: 2px;
-	width: 13px;
-	height: 13px;
+  display: block;
+  height: 13px;
+  margin: 0 auto 40px;
+  stroke: #000;
+  stroke-width: 2px;
+  width: 13px;
 }
 
 .blog-gallery {
-	list-style-type: none;
-	padding: 0;
-	margin: 40px 0 0 0;
+  margin: 40px 0 0;
 }
 
 .blog-gallery-item {
-	position: relative;
-	display: inline-block;
-	width: 317px;
-	margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  width: 317px;
 }
 
 .blog-gallery-item:hover {
-	box-shadow: 0 0 25px 0 rgba(0,0,0,0.32);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.32);
 }
 
 .blog-gallery-item-gradient {
-	height: 212px;
+  height: 212px;
 }
 
 .blog-gallery-item-gradient::after {
-	background-image: linear-gradient(to bottom, transparent, #000);
-	content: '';
-	position: absolute;
-	width: 317px;
-	height: 212px;
-	top: 0;
-	left: 0;
-	opacity: 0.7;
+  background-image: linear-gradient(to bottom, transparent, #000);
+  content: '';
+  height: 212px;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 317px;
 }
 
 .blog-gallery-item:hover .blog-gallery-item-gradient::after {
-	background-image: none;
+  background-image: none;
 }
 
 .blog-gallery-item-description {
-	width: 220px;
-	font: 16px/24px "Raleway", sans-serif;
-	color: #787878;
-	text-align: start;
-	margin: 25px auto 25px auto;
+  color: #787878;
+  font: 16px/24px "Raleway", sans-serif;
+  margin: 25px auto;
+  text-align: left;
+  width: 220px;
 }
 
 .blog-gallery-item:hover .blog-gallery-item-description {
-	color: #0022ff;
+  color: #0022ff;
 }
 
 .blog-button-gallery {
-	display: inline-block;
-	background-color: #00b0ff;
-	color: #fff;
-	font: bold 14px/14px "Montserrat", sans-serif;
-	margin-top: 40px;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	text-align: center;
+  background-color: #00b0ff;
+  color: #fff;
+  display: inline-block;
+  font: bold 14px/14px "Montserrat", sans-serif;
+  margin-top: 40px;
+  padding: 16px 30px;
+  text-transform: uppercase;
 }
 
 .blog-button-gallery:hover {
-	color: #000;
+  color: #000;
 }
 
 .socials {
-	position: absolute;
-	bottom: -925px;
-	left: -60px;
+  margin-top: 230px;
+  text-align: right;
 }
 
 .socials-instagram {
-	display: inline-block;
+  display: inline-block;
+  left: -60px;
+  position: absolute;
+  text-align: initial;
+  z-index: 1;
+}
+
+.socials-instagram-link {
+  display: block;
+}
+
+.socials-instagram-headline {
+  font-size: 91px;
+  line-height: 91px;
+  top: -75px;
 }
 
 .socials-instagram-gallery {
-	max-width: 640px;
+  width: 640px;
 }
 
 .socials-instagram-gallery::after {
-	content: '';
-	display: table;
-	clear: both;
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .socials-instagram-gallery-item {
-	float: left;
+  float: left;
 }
 
 .socials-instagram-footer {
-	height: 70px;
-	background-color: #fff;
+  background-color: #fff;
+  height: 70px;
 }
 
 .socials-instagram-footer::before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .socials-instagram-footer-logo {
-	vertical-align: middle;
-	margin: 0 20px;
+  margin: 0 20px;
+  vertical-align: middle;
 }
 
 .socials-instagram-footer-slogan {
-	vertical-align: middle;
-	color: #00b0ff;
-	font: bold 24px/24px "Roboto Condensed", sans-serif;
-	text-transform: uppercase;
-	margin-right: 15px;
+  color: #00b0ff;
+  font: bold 24px/24px "Roboto Condensed", sans-serif;
+  margin-right: 15px;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .socials-instagram-footer-nickname {
-	vertical-align: middle;
-	font: 16px/16px "Raleway", sans-serif;
+  font: 16px/16px "Raleway", sans-serif;
+  vertical-align: middle;
 }
 
 .socials-facebook {
-	width: 440px;
-	height: 348px;
-	background-image: linear-gradient(to bottom, #385490 50%, #e5e5e5 50%);
-	display: inline-block;
-	vertical-align: top;
-    margin-top: 60px;
-    margin-left: 50px;
+  background-image: linear-gradient(to bottom, #385490 50%, #e5e5e5 50%);
+  display: inline-block;
+  margin: 60px 20px 60px 0;
+  padding: 30px 50px;
+  text-align: initial;
 }
 
 .socials-facebook-logo {
-	display: block;
-	margin: 30px auto;
+  background: url("images/Logo-Facebook.png") center no-repeat;
+  display: block;
+  height: 35px;
+  margin: 0 auto;
 }
 
 .socials-facebook-group {
-	position: relative;
-	height: 130px;
-	width: 340px;
-	background-color: #f6f7f9;
-	background-image: url("images/Cover.jpg");
-	background-repeat: no-repeat;
-	margin: 0 auto;
+  background: url("images/Cover.jpg") no-repeat #f6f7f9;
+  margin: 30px auto 0;
+  padding: 8px;
 }
 
 .socials-facebook-group-photo {
-	float: left;
-	margin: 8px 5px 0 8px;
+  float: left;
+  margin-right: 5px;
 }
 
 .socials-facebook-group-title {
-	font-size: 17px;
-	font-family: "Helvetica LT Std", sans-serif;
-	color: #fff;
-	padding-top: 15px;
+  color: #fff;
+  font-family: "Helvetica LT Std", sans-serif;
+  font-size: 17px;
+  padding-top: 15px;
 }
 
 .socials-facebook-group-likes {
-	font-size: 12px;
-	font-family: "Helvetica LT Std", sans-serif;
-	color: #fff;
+  color: #fff;
+  font-family: "Helvetica LT Std", sans-serif;
+  font-size: 12px;
 }
 
 .socials-facebook-group-likebutton {
-	background-color: #fff;
-	height: 23px;
-	width: 92px;
-    box-shadow: 0 0 1px 1px rgba(1,1,1,0.2);
-    position: absolute;
-    left: 9px;
-    top: 93px;
-}
-
-.socials-facebook-group-likebutton::before, .socials-facebook-group-sharebutton::before {
-	content: '';
-	display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.socials-facebook-group-likebutton-icon, .socials-facebook-group-sharebutton-icon {
-	vertical-align: middle;
-	margin: 0 5px 0 8px;
-}
-
-.socials-facebook-group-likebutton-text, .socials-facebook-group-sharebutton-text {
-	text-transform: capitalize;
-    color: #4b4f56;
-	font: bold 12px/23px "Helvetica LT Std", sans-serif;
-	vertical-align: middle;
+  background: url("images/FB-icon.jpg") 10px center no-repeat #fff;
+  box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.2);
+  color: #4b4f56;
+  display: inline-block;
+  font: bold 12px "Helvetica LT Std", sans-serif;
+  margin-top: 35px;
+  padding: 5px 10px 5px 30px;
+  text-transform: capitalize;
 }
 
 .socials-facebook-group-sharebutton {
-	background-color: #fff;
-	height: 23px;
-	width: 92px;
-    box-shadow: 0 0 1px 1px rgba(1,1,1,0.2);
-    position: absolute;
-    right: 9px;
-    top: 93px;
-}
-
-.socials-facebook-group-friendlist-wrapper {
-	position: relative;
-	top: 79px;
-	margin: 0 auto;
-	width: 340px;
-	padding: 8px;
-    box-sizing: border-box;
-	background-color: #f6f7f9;
+  background: url("images/Share-icon.png") 10px center no-repeat #fff;
+  box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.2);
+  color: #4b4f56;
+  float: right;
+  font: bold 12px "Helvetica LT Std", sans-serif;
+  margin-top: 35px;
+  padding: 5px 10px 5px 30px;
+  text-transform: capitalize;
 }
 
 .socials-facebook-group-friendlist {
-	box-shadow: 0 0 4px 1px rgba(0,0,0,.13);
-	background-color: #fff;
-	border-radius: 1px;
-	padding: 8px;
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, .13);
+  margin-top: 10px;
+  padding: 8px;
 }
 
 .socials-facebook-group-friendlist-title {
-	color: #4b4f56;
-	font-size: 12px;
-	font-family: "Helvetica LT Std", sans-serif;
-	margin-bottom: 7px;
-}
-
-.socials-facebook-group-friendlist-users {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+  color: #4b4f56;
+  font-family: "Helvetica LT Std", sans-serif;
+  font-size: 12px;
+  margin-bottom: 7px;
 }
 
 .socials-facebook-group-friendlist-users::after {
-	content: '';
-	display: table;
-	clear: left;
+  clear: left;
+  content: '';
+  display: table;
 }
 
 .socials-facebook-group-friendlist-user {
-	float: left;
-    margin-right: 2px;
+  float: left;
+  margin-right: 2px;
 }
 
 .socials-facebook-group-friendlist-user:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .footer {
-	background-color: #000;
-    height: 415px;
-	color: #4d4d4d;
+  background-color: #000;
+  color: #4d4d4d;
+  height: 415px;
 }
 
 .footer-copyright {
-	display: inline-block;
-    margin-top: 250px;
-    margin-left: -63px;
-	font: 12px "Raleway SemiBold", sans-serif;
+  display: inline-block;
+  font: 12px "Raleway SemiBold", sans-serif;
+  margin-left: -63px;
+  margin-top: 270px;
 }
 
 .footer-copyright-bullet {
-	margin-left: 10px;
-	margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer-nav {
-	position: absolute;
-	top: 45px;
-    left: 670px;
-}
-
-.footer-nav-items {
-	list-style-type: none;
-	display: inline-block;
-	column-count: 2;
-	width: 400px;
-	margin: 0;
-	padding: 0;
+  column-count: 2;
+  display: inline-block;
+  left: 670px;
+  position: absolute;
+  top: 45px;
+  width: 400px;
 }
 
 .footer-nav-item {
-	background: url('images/Waves-column.png') no-repeat left;
-	padding-left: 30px;
-	font: 14px/34px "Raleway", sans-serif;
-	color: #fff;
+  background: url("images/Waves-column.png") no-repeat left;
+  color: #fff;
+  font: 14px/34px "Raleway", sans-serif;
+  padding-left: 30px;
 }
 
 .footer-subscribe {
-	position: absolute;
-	top: 280px;
-	left: 670px;
-	border-bottom: 1px solid #4d4d4d;
+  border-bottom: 1px solid #4d4d4d;
+  left: 670px;
+  position: absolute;
+  top: 280px;
 }
 
 .footer-subscribe-title {
-	color: #fff;
-	font: 16px "Montserrat", sans-serif;
-	margin-bottom: 10px;
+  color: #fff;
+  display: block;
+  font: 16px "Montserrat", sans-serif;
+  margin-bottom: 10px;
 }
 
 .footer-subscribe-textbox {
-	padding: 0 0 0 25px;
-	color: #4d4d4d;
-	background: transparent url('images/Mail-icon.png') no-repeat left center;
+  background: transparent url("images/Mail-icon.png") no-repeat left center;
   border: none;
-	font: 14px/34px "Raleway", sans-serif;
-	width: auto;
+  color: #4d4d4d;
+  font: 14px/34px "Raleway", sans-serif;
+  padding: 0 0 0 25px;
+  width: auto;
 }
 
 .footer-subscribe-textbox:focus {
-	outline: none;
+  color: #fff;
+  outline: none;
 }
 
 .footer-subscribe-submit {
-	float: right;
-	width: 22px;
-	line-height: 34px;
-	background: transparent url('images/Submit.png') no-repeat 50% 50%;
-	border: none;
-	padding: 0;
+  background: transparent url("images/Submit.png") no-repeat 50% 50%;
+  border: none;
+  float: right;
+  line-height: 34px;
+  padding: 0;
+  width: 22px;
 }
