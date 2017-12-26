@@ -1,12 +1,7 @@
 body {
-  background-image: url("images/header-background.jpg");
-  background-repeat: no-repeat;
+  background: url("images/header-background.jpg") no-repeat;
   margin: 0;
   padding: 0;
-}
-
-main {
-  position: relative;
 }
 
 a {
@@ -20,6 +15,10 @@ ul {
   padding: 0;
 }
 
+figure {
+  margin: 0;
+}
+
 .clearfix::after {
   clear: both;
   content: "";
@@ -29,28 +28,32 @@ ul {
 .link {
   border-bottom: 2px solid #00b0ff;
   color: #00b0ff;
-  font: 16px/22px "Montserrat", sans-serif;
-  padding-bottom: 3px;
+  font: 16px "Montserrat", sans-serif;
+  padding-bottom: 5px;
+}
+
+.button {
+  background-color: #00b0ff;
+  color: #fff;
+  display: inline-block;
+  font: bold 14px "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color: #000;
 }
 
 .headline {
-  font: bold 127px/127px "Montserrat", sans-serif;
+  font: bold 127px "Montserrat", sans-serif;
   letter-spacing: 10px;
   margin: 0;
   opacity: 0.015;
   position: absolute;
   text-transform: uppercase;
   white-space: nowrap;
-}
-
-.logo {
-  float: left;
-  font: bold 32px/36px "Montserrat", sans-serif;
-  margin: 0;
-}
-
-.content {
-  position: relative;
 }
 
 .wrapper {
@@ -61,221 +64,261 @@ ul {
 }
 
 .header {
-  margin-bottom: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
-  text-align: center;
 }
 
-.navigation {
-  display: inline-block;
-  line-height: 36px;
+.logo {
+  font: bold 32px "Montserrat", sans-serif;
 }
 
-.navigation-item {
-  display: inline;
+.nav__link {
+  font-size: 14px;
 }
 
-.navigation-item a {
+.nav__link_top {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
   padding: 0 7px;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
-.navigation-item a:hover {
+.nav__link_top:hover {
   background-color: #00b0ff;
   color: #fff;
 }
 
-.social-buttons {
-  float: right;
+.nav__link_bottom {
+  background: url("images/Waves-column.png") no-repeat left;
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-family: "Raleway", sans-serif;
+  min-width: 150px;
+  padding: 10px 0 10px 30px;
+  width: 50%;
 }
 
-.social-button {
-  background-color: #fff;
-  border-radius: 50%;
+.nav__link_bottom:hover {
+  font-weight: bold;
+}
+
+.social-links__item {
   display: inline-block;
+}
+
+.social-links__link {
+  border-radius: 50%;
+  display: block;
   height: 36px;
-  line-height: 39px;
   width: 36px;
 }
 
-.slogan {
-  font-family: "Playfair Display", sans-serif;
+.social-links__link_facebook {
+  background: url("images/FB-Logo-mono.png") center no-repeat #fff;
+}
+
+.social-links__link_instagram {
+  background: url("images/Instagram-Logo-mono.png") center no-repeat #fff;
+}
+
+.social-links__link_email {
+  background: url("images/Email-Logo-mono.png") center no-repeat #fff;
+}
+
+.main-page {
+  position: relative;
+}
+
+.main-page__subtitle,
+.main-page__title {
   font-style: italic;
-  margin-top: 122px;
+  font-weight: normal;
   text-align: center;
 }
 
-.slogan-title {
+.main-page__title {
+  font-family: "Playfair Display", sans-serif;
   font-size: 50px;
-  font-weight: normal;
-}
-
-.slogan-subtitle {
-  color: #fff;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.product {
-  background: #fff linear-gradient(130deg, #00d2ff 33%, transparent 33%) -25px no-repeat;
-  box-shadow: 10px -10px 50px 0 rgba(0, 0, 0, 0.32);
-  height: 600px;
   margin-top: 122px;
 }
 
-.product-view {
-  float: left;
-  height: 100%;
+.main-page__subtitle {
+  color: #fff;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 24px;
 }
 
-.product-view::before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+.main-page__shop {
+  margin-top: 122px;
 }
 
-.product-view-photo {
-  display: inline-block;
+.main-page__shop-headline {
+  bottom: -165px;
+  right: -495px;
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+}
+
+.shop {
+  align-items: center;
+  background: #fff linear-gradient(130deg, #00d2ff 33%, transparent 33%) -25px no-repeat;
+  box-shadow: 10px -10px 50px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+}
+
+.shop__photo {
   margin-left: 30px;
-  vertical-align: middle;
 }
 
-.product-view-previews {
-  display: inline-block;
+.shop__previews {
   margin: 0 0 0 10px;
-  vertical-align: middle;
 }
 
-.product-view-previews-item {
+.shop__article {
+  font-family: "Montserrat", sans-serif;
+  padding: 45px 50px 50px 60px;
+}
+
+.shop__pagination {
+  background-color: #000;
+  color: #fff;
+  font: 14px "Montserrat", sans-serif;
+  padding: 12px 10px;
+  position: absolute;
+  right: 0;
+  top: 88px;
+}
+
+.shop__preview {
   border: 1px solid #ccc;
   cursor: pointer;
   margin-bottom: 3px;
 }
 
-.product-view-previews-item:last-child {
+.shop__preview:last-child {
   margin-bottom: 0;
 }
 
-.product-view-previews-item:hover,
-.product-view-previews-item_selected {
+.shop__preview:hover,
+.shop__preview_selected {
   outline: 2px solid #00b0ff;
   outline-offset: -2px;
 }
 
-.product-view-previews-item img {
+.shop__preview-image {
   display: block;
 }
 
-.product-description {
-  overflow: hidden;
-  padding: 45px 50px 0 60px;
-}
-
-.product-description-headline {
-  bottom: -135px;
-  right: -510px;
-  transform: rotate(270deg);
-  transform-origin: left top 0;
-}
-
-.product-description-title {
-  font: bold 20px/26px "Montserrat", sans-serif;
+.shop__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
   margin: 0;
 }
 
-.product-description-rating {
+.shop__rating {
   margin: 5px 0 0;
 }
 
-.product-description-rating::after {
-  color: #787878;
-  content: "(52)";
-  display: inline-block;
-  font: bold 12px "Montserrat", sans-serif;
-  position: relative;
-  top: -2px;
+.shop__tabs {
+  margin: 45px 0 30px;
 }
 
-.product-description-rating li {
+.shop__inner {
+  align-items: center;
+  display: flex;
+}
+
+.shop__price {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shop__buy {
+  margin-left: 30px;
+}
+
+.shop__view-all {
+  display: block;
+  margin-top: 70px;
+  width: fit-content;
+}
+
+.rating__measure {
+  display: inline;
+  vertical-align: middle;
+}
+
+.rating__item {
   cursor: pointer;
   display: inline-block;
   height: 14px;
   width: 14px;
 }
 
-.product-description-rating-item_enabled {
+.rating__item_enabled {
   background-image: url("images/Star-on.png");
 }
 
-.product-description-rating-item_disabled {
+.rating__item_disabled {
   background-image: url("images/Star-off.png");
 }
 
-.product-description-tabs {
-  border-bottom: 1px solid #a0a0a0;
-  margin: 45px 0 0;
+.rating__total {
+  color: #787878;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.product-description-tabs-item,
-.product-description-tabs-item_selected {
+.tabs {
+  font-family: "Raleway", sans-serif;
+}
+
+.tabs__list {
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.tabs__item {
   color: #a0a0a0;
   cursor: pointer;
   display: inline;
-  font: bold 14px/25px "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
   margin-right: 30px;
   padding-bottom: 3px;
   text-transform: uppercase;
 }
 
-.product-description-tabs-item:hover,
-.product-description-tabs-item_selected {
+.tabs__item:last-child {
+  margin-right: 0;
+}
+
+.tabs__item:hover,
+.tabs__item_selected {
   border-bottom: 3px solid #00b0ff;
   color: #000;
 }
 
-.product-description-tab-content {
+.tabs__content {
   color: #787878;
-  font: 18.3px/24px "Raleway", sans-serif;
-  margin: 15px 0 30px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 15px 0 0;
 }
 
-.product-description-price {
-  color: #000;
-  font: bold 24px/45px "Montserrat", sans-serif;
-}
-
-.product-description-buy {
-  background-color: #00b0ff;
-  color: #fff;
-  font: bold 14px/45px "Montserrat", sans-serif;
-  margin-left: 30px;
-  padding: 15px 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.product-description-buy:hover {
-  color: #000;
-}
-
-.product-description-all {
-  display: block;
-  margin-top: 70px;
-  width: fit-content;
-}
-
-.product-description-scroll {
+.shop__scroll {
   position: absolute;
   right: -38px;
   top: 50px;
 }
 
-.product-description-arrow {
+.shop__next,
+.shop__prev {
   background-color: #f2d800;
   fill: none;
   float: left;
@@ -285,29 +328,29 @@ ul {
   width: 38px;
 }
 
-.product-description-arrow:hover {
+.shop__next:hover,
+.shop__prev:hover {
   stroke: #000;
 }
 
-.product-description-page-counter {
-  background-color: #000;
-  color: #fff;
-  font: 14px/38px "Montserrat", sans-serif;
-  padding: 0 10px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 88px;
-}
-
-.about-us {
+.main-page__about-us {
   background: url("images/about-us-background.jpg") no-repeat;
   margin-top: 290px;
+  position: relative;
 }
 
-.about-us-container {
+.main-page__about-us-headline {
+  font-size: 196px;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: -170px;
+  width: fit-content;
+  z-index: -1;
+}
+
+.about-us__article {
   background-color: #fff;
-  box-sizing: content-box;
   color: #000;
   display: inline-block;
   margin-top: 290px;
@@ -317,8 +360,8 @@ ul {
   width: 345px;
 }
 
-.about-us-container:before {
-  background-color: #fff;
+.about-us__article:before {
+  background-color: inherit;
   content: '';
   height: 100%;
   left: -1000px;
@@ -327,21 +370,13 @@ ul {
   width: 1000px;
 }
 
-.about-us-headline {
-  font-size: 196px;
-  left: -60px;
-  line-height: 196px;
-  top: -150px;
-  z-index: -1;
-}
-
-.about-us-title {
+.about-us__title {
   font: normal 18px "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
 
-.about-us-delimiter {
+.delimiter {
   display: block;
   height: 13px;
   margin: auto;
@@ -350,186 +385,185 @@ ul {
   width: 13px;
 }
 
-.about-us-description {
-  font: italic 22px/38px "Playfair Display", "Times New Roman";
+.about-us__description {
+  font: italic 22px/38px "Playfair Display", "Times New Roman", sans-serif;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: initial;
 }
 
-.about-us-preview {
+.about-us__video {
   box-shadow: 20px 20px 50px 5px rgba(0, 0, 0, 0.32);
   display: inline-block;
   margin-left: 70px;
   margin-top: 550px;
 }
 
-.our-team {
+.main-page__our-team {
   margin-top: 250px;
+}
+
+.carousel {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.main-page__our-team-headline {
+  font-size: 190px;
+  top: -170px;
+}
+
+.carousel__list {
   text-align: center;
 }
 
-.our-team-headline {
-  font-size: 190px;
-  line-height: 190px;
-  top: -150px;
+.carousel__item:not(:first-child) {
+  margin-left: -20px;
 }
 
-.our-team-teammate {
+.carousel__item:nth-child(even) {
+  top: 20px;
+  z-index: 1;
+}
+
+.profile {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.2);
   display: inline-block;
   position: relative;
-  width: 260px;
+  width: 250px;
 }
 
-.our-team-teammate:not(:first-child) {
-  margin-left: -20px;
+.profile:hover {
+  background-color: #00b0ff;
 }
 
-.our-team-teammate:nth-child(even) {
-  top: 20px;
-  z-index: 1;
-}
-
-.our-team-teammate-link {
+.profile__link {
   display: block;
   padding: 30px 0 50px;
 }
 
-.our-team-teammate-name {
-  color: #00b0ff;
-  font: 18px 'Montserrat', sans-serif;
-  margin: 0;
-}
-
-.our-team-teammate-avatar {
+.profile__avatar {
   border: 2px solid #fff;
   border-radius: 50%;
-  box-sizing: content-box;
   height: 100px;
   margin-bottom: 10px;
   width: 100px;
 }
 
-.our-team-teammate-location,
-.our-team-teammate-nickname {
+.profile__name {
+  color: #00b0ff;
+  font: 18px 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.profile__location,
+.profile__nickname {
   color: #8c8c8c;
   font: 14px "Raleway", sans-serif;
 }
 
-.our-team-teammate-delimiter {
-  margin: 15px 0 10px;
+.profile__nickname::after {
+  content: url("images/Waves.png");
+  display: block;
+  margin: 5px 0;
 }
 
-.our-team-teammate-location::before {
+.profile__location::before {
   content: url("images/Pin-icon.png");
   margin-right: 5px;
 }
 
-.our-team-teammate:hover {
-  background-color: #00b0ff;
-}
-
-.our-team-teammate:hover .our-team-teammate-location,
-.our-team-teammate:hover .our-team-teammate-name,
-.our-team-teammate:hover .our-team-teammate-nickname {
+.profile:hover .profile__location,
+.profile:hover .profile__name,
+.profile:hover .profile__nickname {
   color: #fff;
 }
 
-.our-team-teammate:hover .our-team-teammate-delimiter {
+.profile:hover .profile__nickname::after {
   content: url("images/WavesSelected.png");
 }
 
-.our-team-teammate:hover .our-team-teammate-location::before {
+.profile:hover .profile__location::before {
   content: url("images/Pin-icon-selected.png");
 }
 
-.our-team-arrow {
+.button-arrow {
   background-color: #fff;
   border: 2px solid #646464;
   border-radius: 50%;
-  box-sizing: content-box;
   fill: none;
   height: 38px;
-  position: absolute;
   stroke: #646464;
   stroke-width: 2;
-  top: 130px;
   width: 38px;
 }
 
-.our-team-arrow:hover {
+.button-arrow:hover {
   border: 2px solid transparent;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.16);
   stroke: #0022ff;
 }
 
-.left {
-  left: -25px;
+.carousel__prev {
+  margin-right: 30px;
 }
 
-.right {
-  right: -5px;
+.carousel__next {
+  margin-left: 30px;
+}
+
+.main-page__blog {
+  margin-top: 210px;
 }
 
 .blog {
-  margin-top: 210px;
   text-align: center;
 }
 
-.blog-title {
+.blog__title {
   color: #000;
   font: normal 18px "Montserrat", sans-serif;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.blog-title-delimiter {
-  display: block;
-  height: 13px;
+.blog__delimiter {
   margin: 0 auto 40px;
-  stroke: #000;
-  stroke-width: 2px;
-  width: 13px;
 }
 
-.blog-gallery {
-  margin: 40px 0 0;
-}
-
-.blog-gallery-item {
+.post {
   display: inline-block;
   margin: 0 15px;
-  position: relative;
-  width: 317px;
 }
 
-.blog-gallery-item:hover {
+.post:hover {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.32);
 }
 
-.blog-gallery-item-gradient {
+.post__image-wrapper {
   height: 212px;
+  position: relative;
 }
 
-.blog-gallery-item-gradient::after {
+.post__image-wrapper::after {
   background-image: linear-gradient(to bottom, transparent, #000);
   content: '';
-  height: 212px;
+  height: 100%;
   left: 0;
   opacity: 0.7;
   position: absolute;
   top: 0;
-  width: 317px;
+  width: 100%;
 }
 
-.blog-gallery-item:hover .blog-gallery-item-gradient::after {
+.post:hover .post__image-wrapper::after {
   background-image: none;
 }
 
-.blog-gallery-item-description {
+.post__caption {
   color: #787878;
   font: 16px/24px "Raleway", sans-serif;
   margin: 25px auto;
@@ -537,246 +571,222 @@ ul {
   width: 220px;
 }
 
-.blog-gallery-item:hover .blog-gallery-item-description {
+.blog:hover .blog__description {
   color: #0022ff;
 }
 
-.blog-button-gallery {
-  background-color: #00b0ff;
-  color: #fff;
-  display: inline-block;
-  font: bold 14px/14px "Montserrat", sans-serif;
-  margin-top: 40px;
-  padding: 16px 30px;
-  text-transform: uppercase;
+.blog__show-all {
+  margin-top: 30px;
 }
 
-.blog-button-gallery:hover {
-  color: #000;
-}
-
-.socials {
+.main-page__social {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 230px;
-  text-align: right;
 }
 
-.socials-instagram {
-  display: inline-block;
+.main-page__instagram {
   left: -60px;
   position: absolute;
-  text-align: initial;
   z-index: 1;
 }
 
-.socials-instagram-link {
-  display: block;
+.instagram {
+  width: 640px;
 }
 
-.socials-instagram-headline {
+.main-page__social-headline {
   font-size: 91px;
+  left: -60px;
   line-height: 91px;
   top: -75px;
 }
 
-.socials-instagram-gallery {
-  width: 640px;
+.instagram__photos {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.socials-instagram-gallery::after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.socials-instagram-gallery-item {
-  float: left;
-}
-
-.socials-instagram-footer {
+.instagram__footer {
+  align-items: center;
   background-color: #fff;
-  height: 70px;
+  display: flex;
+  padding: 18px 20px;
 }
 
-.socials-instagram-footer::before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+.instagram__logo {
+  margin-right: 20px;
 }
 
-.socials-instagram-footer-logo {
-  margin: 0 20px;
-  vertical-align: middle;
-}
-
-.socials-instagram-footer-slogan {
+.instagram__slogan {
   color: #00b0ff;
-  font: bold 24px/24px "Roboto Condensed", sans-serif;
+  font: bold 24px "Roboto Condensed", sans-serif;
   margin-right: 15px;
   text-transform: uppercase;
-  vertical-align: middle;
 }
 
-.socials-instagram-footer-nickname {
-  font: 16px/16px "Raleway", sans-serif;
-  vertical-align: middle;
+.instagram__nickname {
+  font: 16px "Raleway", sans-serif;
 }
 
-.socials-facebook {
-  background-image: linear-gradient(to bottom, #385490 50%, #e5e5e5 50%);
-  display: inline-block;
+.main-page__facebook {
   margin: 60px 20px 60px 0;
-  padding: 30px 50px;
-  text-align: initial;
 }
 
-.socials-facebook-logo {
+.facebook {
+  background-image: linear-gradient(to bottom, #385490 50%, #e5e5e5 50%);
+  font-family: "Helvetica LT Std", sans-serif;
+  padding: 30px 50px;
+}
+
+.facebook__logo {
   background: url("images/Logo-Facebook.png") center no-repeat;
   display: block;
   height: 35px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
-.socials-facebook-group {
+.facebook__group {
   background: url("images/Cover.jpg") no-repeat #f6f7f9;
-  margin: 30px auto 0;
+  margin: auto 0;
   padding: 8px;
 }
 
-.socials-facebook-group-photo {
-  float: left;
-  margin-right: 5px;
+.facebook__link {
+  background: url("images/Profile-photo.jpg") no-repeat;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  height: 54px;
+  margin-bottom: 40px;
+  padding: 5px 0 0 60px;
 }
 
-.socials-facebook-group-title {
-  color: #fff;
-  font-family: "Helvetica LT Std", sans-serif;
+.facebook__title {
   font-size: 17px;
-  padding-top: 15px;
 }
 
-.socials-facebook-group-likes {
-  color: #fff;
-  font-family: "Helvetica LT Std", sans-serif;
+.facebook__likes {
   font-size: 12px;
 }
 
-.socials-facebook-group-likebutton {
-  background: url("images/FB-icon.jpg") 10px center no-repeat #fff;
+.fb-button {
+  background-color: #fff;
   box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.2);
   color: #4b4f56;
   display: inline-block;
   font: bold 12px "Helvetica LT Std", sans-serif;
-  margin-top: 35px;
   padding: 5px 10px 5px 30px;
   text-transform: capitalize;
 }
 
-.socials-facebook-group-sharebutton {
+.fb-button_like {
+  background: url("images/FB-icon.jpg") 10px center no-repeat #fff;
+}
+
+.fb-button_share {
   background: url("images/Share-icon.png") 10px center no-repeat #fff;
-  box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.2);
-  color: #4b4f56;
-  float: right;
-  font: bold 12px "Helvetica LT Std", sans-serif;
-  margin-top: 35px;
-  padding: 5px 10px 5px 30px;
-  text-transform: capitalize;
 }
 
-.socials-facebook-group-friendlist {
+.facebook__likebutton {
+  margin-bottom: 10px;
+}
+
+.facebook__sharebutton {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.fb-members {
   background-color: #fff;
   border-radius: 1px;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, .13);
-  margin-top: 10px;
+  margin: 0;
   padding: 8px;
 }
 
-.socials-facebook-group-friendlist-title {
+.fb-members__title {
   color: #4b4f56;
-  font-family: "Helvetica LT Std", sans-serif;
   font-size: 12px;
   margin-bottom: 7px;
 }
 
-.socials-facebook-group-friendlist-users::after {
-  clear: left;
-  content: '';
-  display: table;
+.fb-member__list {
+  display: flex;
 }
 
-.socials-facebook-group-friendlist-user {
-  float: left;
+.fb-member__item {
+  display: inline-block;
   margin-right: 2px;
 }
 
-.socials-facebook-group-friendlist-user:last-child {
+.fb-member__item:last-child {
   margin-right: 0;
+}
+
+.fb-member__link {
+  display: block;
+}
+
+.fb-member__avatar {
+  display: block;
 }
 
 .footer {
   background-color: #000;
   color: #4d4d4d;
-  height: 415px;
 }
 
-.footer-copyright {
+.footer__copyright {
   display: inline-block;
+  margin: 270px 455px 0 -63px;
+  width: 250px;
+}
+
+.copyright {
   font: 12px "Raleway SemiBold", sans-serif;
-  margin-left: -63px;
-  margin-top: 270px;
 }
 
-.footer-copyright-bullet {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.footer-nav {
-  column-count: 2;
+.footer__nav {
   display: inline-block;
-  left: 670px;
-  position: absolute;
-  top: 45px;
+  margin-top: 45px;
+  vertical-align: top;
   width: 400px;
 }
 
-.footer-nav-item {
-  background: url("images/Waves-column.png") no-repeat left;
-  color: #fff;
-  font: 14px/34px "Raleway", sans-serif;
-  padding-left: 30px;
+.footer__subscribe {
+  float: right;
+  margin-bottom: 65px;
+  margin-right: 155px;
+  width: 300px;
 }
 
-.footer-subscribe {
+.form-subscribe {
   border-bottom: 1px solid #4d4d4d;
-  left: 670px;
-  position: absolute;
-  top: 280px;
 }
 
-.footer-subscribe-title {
+.form-subscribe__title {
   color: #fff;
   display: block;
   font: 16px "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 
-.footer-subscribe-textbox {
+.form-subscribe__textbox {
   background: transparent url("images/Mail-icon.png") no-repeat left center;
   border: none;
   color: #4d4d4d;
   font: 14px/34px "Raleway", sans-serif;
   padding: 0 0 0 25px;
-  width: auto;
 }
 
-.footer-subscribe-textbox:focus {
+.form-subscribe__textbox:focus {
   color: #fff;
   outline: none;
 }
 
-.footer-subscribe-submit {
-  background: transparent url("images/Submit.png") no-repeat 50% 50%;
+.form-subscribe__submit {
+  background: transparent url("images/Submit.png") no-repeat center center;
   border: none;
   float: right;
   line-height: 34px;
