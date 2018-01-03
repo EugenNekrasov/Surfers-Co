@@ -1,5 +1,5 @@
 body {
-  background: url("images/header-background.jpg") no-repeat;
+  background: url("images/body.jpg") no-repeat;
   margin: 0;
   padding: 0;
 }
@@ -334,7 +334,7 @@ figure {
 }
 
 .main-page__about-us {
-  background: url("images/about-us-background.jpg") no-repeat;
+  background: url("images/main-page__about-us.jpg") no-repeat;
   margin-top: 290px;
   position: relative;
 }
@@ -602,9 +602,8 @@ figure {
   top: -75px;
 }
 
-.instagram__photos {
-  display: flex;
-  flex-wrap: wrap;
+.instagram__photo {
+  display: block;
 }
 
 .instagram__footer {
@@ -640,25 +639,25 @@ figure {
 }
 
 .facebook__logo {
-  background: url("images/Logo-Facebook.png") center no-repeat;
+  background: url("images/facebook.png") 0 -131px no-repeat;
   display: block;
   height: 35px;
   margin: 0 auto 30px;
+  width: 156px;
 }
 
-.facebook__group {
-  background: url("images/Cover.jpg") no-repeat #f6f7f9;
-  margin: auto 0;
+.facebook__profile {
+  background: url("images/facebook.png") no-repeat #f6f7f9;
   padding: 8px;
 }
 
-.facebook__link {
-  background: url("images/Profile-photo.jpg") no-repeat;
+.facebook__description {
+  background: url("images/facebook.png") -156px -131px no-repeat;
   box-sizing: border-box;
   color: #fff;
   display: block;
   height: 54px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 5px 0 0 60px;
 }
 
@@ -675,26 +674,36 @@ figure {
   box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.2);
   color: #4b4f56;
   display: inline-block;
-  font: bold 12px "Helvetica LT Std", sans-serif;
-  padding: 5px 10px 5px 30px;
+  font: bold 12px/13px "Helvetica LT Std", sans-serif;
+  padding: 4px 10px;
   text-transform: capitalize;
 }
 
-.fb-button_like {
-  background: url("images/FB-icon.jpg") 10px center no-repeat #fff;
+.fb-button::before {
+  background: url("images/facebook.png") -26px -173px no-repeat;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  margin-right: 5px;
+  vertical-align: top;
+  width: 12px;
 }
 
-.fb-button_share {
-  background: url("images/Share-icon.png") 10px center no-repeat #fff;
+.fb-button_like::before {
+  background-position: 0 -173px;
 }
 
-.facebook__likebutton {
-  margin-bottom: 10px;
+.fb-button_share::before {
+  background-position: -13px -173px;
 }
 
 .facebook__sharebutton {
   float: right;
-  margin-bottom: 10px;
+}
+
+.facebook__members {
+  background-color: #f6f7f9;
+  padding: 8px;
 }
 
 .fb-members {
@@ -711,25 +720,17 @@ figure {
   margin-bottom: 7px;
 }
 
-.fb-member__list {
-  display: flex;
+.fb-members__list {
+  font-size: 0;
 }
 
-.fb-member__item {
+.fb-members__item {
   display: inline-block;
   margin-right: 2px;
 }
 
-.fb-member__item:last-child {
+.fb-members__item:last-child {
   margin-right: 0;
-}
-
-.fb-member__link {
-  display: block;
-}
-
-.fb-member__avatar {
-  display: block;
 }
 
 .footer {
