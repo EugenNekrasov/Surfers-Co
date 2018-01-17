@@ -4,7 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta content="width=device-width,initial-scale=1" name="viewport">
-		<meta content="Surfers Co. is a study site created for educational purposes." name="description">
+		<meta content="Surfers Co. is a study site created for educational purposes."
+			name="description">
 		<meta content="surfing, surfboards, shop" name="keywords">
 		<link href="styles.css" rel="stylesheet">
 		<title>Surfers Co.</title>
@@ -39,23 +40,25 @@
 			<section class="main-page__shop wrapper">
 				<h3 class="main-page__shop-headline headline">Boards</h3>
 				<div class="shop">
-					<img alt="Product photo" class="shop__photo" src="images/Surfboards.png">
+					<img alt="Product photo" class="shop__photo" src="images/shop__photo.png">
 					<ul class="shop__previews">
 						<li class="shop__preview shop__preview_selected">
-							<img alt="Preview photo №1" class="shop__preview-image" src="images/Surfboards1.jpg">
+							<img alt="Preview photo №1" class="shop__preview-image" src="images/shop__preview-image1.jpg">
 						</li>
 						<li class="shop__preview">
-							<img alt="Preview photo №2" class="shop__preview-image" src="images/Surfboards2.jpg">
+							<img alt="Preview photo №2" class="shop__preview-image" src="images/shop__preview-image2.jpg">
 						</li>
 						<li class="shop__preview">
-							<img alt="Preview photo №3" class="shop__preview-image" src="images/Surfboards3.jpg">
+							<img alt="Preview photo №3" class="shop__preview-image" src="images/shop__preview-image3.jpg">
 						</li>
 						<li class="shop__preview">
-							<img alt="Preview photo №4" class="shop__preview-image" src="images/Surfboards4.jpg">
+							<img alt="Preview photo №4" class="shop__preview-image" src="images/shop__preview-image4.jpg">
 						</li>
 					</ul>
 					<article class="shop__article">
-						<h4 class="shop__title">JR Surfoards The Donny Stoker<br>Yellow/Green Rail Fade</h4>
+						<h4 class="shop__title">
+							JR Surfoards The Donny Stoker<br>Yellow/Green Rail Fade
+						</h4>
 						<div class="shop__rating rating">
 							<ul class="rating__measure">
 								<li class="rating__item rating__item_enabled"></li>
@@ -72,8 +75,14 @@
 								<li class="tabs__item">Features</li>
 								<li class="tabs__item">Dimensions</li>
 							</ul>
-							<p class="tabs__content">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever
-								pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+							<p class="tabs__content">
+								Easy to ride, care free surfing craft that's fun for everyone,
+								paddles well, super fast down the line and great for any level
+								of surfing depending on who rides it. The Donny Stoker, a rework
+								on design from stokesys first ever	pro model. A super easy to
+								surf and fun board. The Donny Stoker is a board for total
+								freesurfing expression.
+							</p>
 						</div>
 						<div class="shop__inner">
 							<strong class="shop__price">$499.99</strong>
@@ -82,14 +91,8 @@
 						<a class="shop__view-all link" href="#">View all boards</a>
 					</article>
 					<div class="shop__scroll">
-						<svg class="shop__prev">
-							<polyline points="18,25 11,19 18,13"/>
-							<line x1="11" x2="27" y1="19" y2="19"/>
-						</svg>
-						<svg class="shop__next">
-							<polyline points="20,25 27,19 20,13"/>
-							<line x1="11" x2="27" y1="19" y2="19"/>
-						</svg>
+						<div class="shop__prev button-arrow button-arrow_square"></div>
+						<div class="shop__next button-arrow button-arrow_square"></div>
 					</div>
 					<div class="shop__pagination">05/25</div>
 				</div>
@@ -99,94 +102,111 @@
 				<div class="about-us wrapper">
 					<article class="about-us__article">
 						<h4 class="about-us__title">We are surfers co.</h4>
-						<svg class="about-us__delimiter delimiter">
-							<line x1="0" x2="13" y1="0" y2="13"/>
-							<line x1="0" x2="13" y1="13" y2="0"/>
-						</svg>
-						<p class="about-us__description">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle
-							sollicitudin ut. Nullam tincidun finibustus scelerisque.
+						<div class="about-us__delimiter delimiter-cross"></div>
+						<p class="about-us__description">
+							Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit.
+							Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse
+							auctor labor nisi, et interdum diam facilisis, aliquam pulvinar
+							semi egetis belle	sollicitudin ut. Nullam tincidun finibustus
+							scelerisque.
 						</p>
 						<a class="about-us__read-more link" href="#">Read more</a>
 					</article>
-					<img alt="video preview" class="about-us__video" src="images/video-preview.jpg">
+					<img alt="video preview" class="about-us__video" src="images/about-us__video.jpg">
 				</div>
 			</section>
 			<section class="main-page__our-team wrapper">
 				<h3 class="main-page__our-team-headline headline">Our team</h3>
 				<div class="carousel">
-					<svg class="carousel__prev button-arrow">
-						<polyline points="18,25 11,19 18,13"/>
-						<line x1="11" x2="27" y1="19" y2="19"/>
-					</svg>
+					<div class="carousel__prev button-arrow button-arrow_circle"></div>
 					<ul class="carousel__list">
 						<li class="carousel__item profile">
 							<a class="profile__link" href="#">
-								<img alt="Taj Burrow" class="profile__avatar" src="images/Avatar1.jpg">
+								<img alt="Taj Burrow" class="profile__avatar" src="images/profile__avatar1.jpg">
 								<h4 class="profile__name">Taj Burrow</h4>
 								<div class="profile__nickname">@taramos</div>
-								<div class="profile__location">Yallingup, Australia</div>
+								<div class="profile__delimiter delimiter-zigzag"></div>
+								<div class="profile__location">
+									<span class="profile__location-delimiter delimiter-location"></span>
+									Yallingup, Australia
+								</div>
 							</a>
 						</li>
 						<li class="carousel__item profile">
 							<a class="profile__link" href="#">
-								<img alt="Malia Manuel" class="profile__avatar" src="images/Avatar2.jpg">
+								<img alt="Malia Manuel" class="profile__avatar" src="images/profile__avatar2.jpg">
 								<h4 class="profile__name">Malia Manuel</h4>
 								<div class="profile__nickname">@maliamanuel</div>
-								<div class="profile__location">Wailua, Hi</div>
+								<div class="profile__delimiter delimiter-zigzag"></div>
+								<div class="profile__location">
+									<span class="profile__location-delimiter delimiter-location"></span>
+									Wailua, Hi
+								</div>
 							</a>
 						</li>
 						<li class="carousel__item profile">
 							<a class="profile__link" href="#">
-								<img alt="Ian Walsh" class="profile__avatar" src="images/Avatar3.jpg">
+								<img alt="Ian Walsh" class="profile__avatar" src="images/profile__avatar3.jpg">
 								<h4 class="profile__name">Ian Walsh</h4>
 								<div class="profile__nickname">@ian.walsh</div>
-								<div class="profile__location">Maui, Hi</div>
+								<div class="profile__delimiter delimiter-zigzag"></div>
+								<div class="profile__location">
+									<span class="profile__location-delimiter delimiter-location"></span>
+									Maui, Hi
+								</div>
 							</a>
 						</li>
 						<li class="carousel__item profile">
 							<a class="profile__link" href="#">
-								<img alt="Macy Callaghan" class="profile__avatar" src="images/Avatar4.jpg">
+								<img alt="Macy Callaghan" class="profile__avatar" src="images/profile__avatar4.jpg">
 								<h4 class="profile__name">Macy Callaghan</h4>
 								<div class="profile__nickname">@macyjanecallaghan</div>
-								<div class="profile__location">San-Clemente, CA</div>
+								<div class="profile__delimiter delimiter-zigzag"></div>
+								<div class="profile__location">
+									<span class="profile__location-delimiter delimiter-location"></span>
+									San-Clemente, CA
+								</div>
 							</a>
 						</li>
 					</ul>
-					<svg class="carousel__next button-arrow">
-						<polyline points="20,25 27,19 20,13"/>
-						<line x1="11" x2="27" y1="19" y2="19"/>
-					</svg>
+					<div class="carousel__next button-arrow button-arrow_circle"></div>
 				</div>
 			</section>
 			<section class="main-page__blog blog">
 				<h4 class="blog__title">latest updates</h4>
-				<svg class="blog__delimiter delimiter">
-					<line x1="0" x2="13" y1="0" y2="13"/>
-					<line x1="0" x2="13" y1="13" y2="0"/>
-				</svg>
+				<div class="blog__delimiter delimiter-cross"></div>
 				<div class="blog__posts">
 					<figure class="post">
 						<a class="post__link" href="#">
 							<div class="post__image-wrapper">
-								<img alt="Blog post picture 1" class="post__image" src="images/Post1.jpg">
+								<img alt="Blog post picture 1" class="post__image" src="images/post__image1.jpg">
 							</div>
-							<figcaption class="post__caption">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</figcaption>
+							<figcaption class="post__caption">
+								Ellie Turner and Jobe Harris have taken out the 2016 British
+								National Surf Championships
+							</figcaption>
 						</a>
 					</figure>
 					<figure class="post">
 						<a class="post__link" href="#">
 							<div class="post__image-wrapper">
-								<img alt="Blog post picture 2" class="post__image" src="images/Post2.jpg">
+								<img alt="Blog post picture 2" class="post__image" src="images/post__image2.jpg">
 							</div>
-							<figcaption class="post__caption">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</figcaption>
+							<figcaption class="post__caption">
+								A large group of surfers invaded the coast of La Jolla Shores,
+								in California, with a single goal in mind
+							</figcaption>
 						</a>
 					</figure>
 					<figure class="post">
 						<a class="post__link" href="#">
 							<div class="post__image-wrapper">
-								<img alt="Blog post picture 3" class="post__image" src="images/Post3.jpg">
+								<img alt="Blog post picture 3" class="post__image" src="images/post__image3.jpg">
 							</div>
-							<figcaption class="post__caption">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</figcaption>
+							<figcaption class="post__caption">
+								Surfboards are constantly evolving, and there are multiple board
+								designs for a broad range of environments
+							</figcaption>
 						</a>
 					</figure>
 				</div>
@@ -198,7 +218,7 @@
 					<a class="instagram__link" href="#">
 						<img alt="" class="instagram__photo" src="images/instagram__photo.jpg">
 						<footer class="instagram__footer">
-							<img alt="Instagram logo" class="instagram__logo" src="images/Logo-Instagram.png">
+							<img alt="Instagram logo" class="instagram__logo" src="images/instagram__logo.png">
 							<span class="instagram__slogan">follow us</span>
 							<span class="instagram__nickname">@surferco</span>
 						</footer>
@@ -211,12 +231,18 @@
 							<div class="facebook__title">Surfers Co.</div>
 							<div class="facebook__likes">52,000 likes</div>
 						</a>
-						<a class="facebook__likebutton fb-button fb-button_like" href="#">Like page</a>
-						<a class="facebook__sharebutton fb-button fb-button_share" href="#">Share</a>
+						<a class="facebook__likebutton fb-button fb-button_like" href="#">
+							Like page
+						</a>
+						<a class="facebook__sharebutton fb-button fb-button_share" href="#">
+							Share
+						</a>
 					</div>
 					<div class="facebook__members">
 						<figure class="fb-members">
-							<figcaption class="fb-members__title">You and 8 friends like this.</figcaption>
+							<figcaption class="fb-members__title">
+								You and 8 friends like this.
+							</figcaption>
 							<ul class="fb-members__list">
 								<li class="fb-members__item">
 									<a class="fb-members__link" href="#">
@@ -271,7 +297,9 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__wrapper wrapper clearfix">
-				<div class="footer__copyright copyright">© 2017 Surfers Co. &nbsp; ● &nbsp; Design by @lucaalco</div>
+				<div class="footer__copyright copyright">
+					© 2017 Surfers Co. &nbsp; ● &nbsp; Design by @lucaalco
+				</div>
 				<nav class="footer__nav nav">
 					<a class="nav__link nav__link_bottom" href="#">About</a>
 					<a class="nav__link nav__link_bottom" href="#">Boards</a>
@@ -283,7 +311,9 @@
 					<a class="nav__link nav__link_bottom" href="#">Contact us</a>
 				</nav>
 				<form class="footer__subscribe form-subscribe">
-					<label class="form-subscribe__title" for="user_email">Subscribe to our newsletter</label>
+					<label class="form-subscribe__title" for="user_email">
+						Subscribe to our newsletter
+					</label>
 					<input class="form-subscribe__textbox" id="user_email" placeholder="Your e-mail" type="email">
 					<input class="form-subscribe__submit" type="submit" value="">
 				</form>
