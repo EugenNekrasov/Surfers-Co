@@ -43,9 +43,9 @@
   <use xlink:href="#arrow" y="101" stroke="#646464"/>
   <use xlink:href="#arrow" y="129" stroke="#0022ff"/>
   <use xlink:href="#cross" y="160" stroke="#000" stroke-width="2"/>
-  <use xlink:href="#logo-facebook" y="184" stroke="#000"/>
-  <use xlink:href="#logo-instagram" y="185" stroke="#000"/>
-  <use xlink:href="#logo-email" y="187" stroke="#000"/>
+  <use xlink:href="#logo-facebook" y="184" stroke="#000" stroke-width="0"/>
+  <use xlink:href="#logo-instagram" y="185" stroke="#000" stroke-width="0"/>
+  <use xlink:href="#logo-email" y="187" stroke="#000" stroke-width="0"/>
   <use xlink:href="#star" y="267" fill="#f2d800"/>
   <use xlink:href="#star" fill-opacity="0" stroke="#606060" stroke-width="2"
     transform="scale(0.73) translate(3 400)"/>
