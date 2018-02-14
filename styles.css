@@ -1,7 +1,46 @@
+@font-face {
+  font-family: "Montserrat";
+  src        : url("fonts/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src        : url("fonts/Montserrat-Bold.woff2") format("woff2"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src        : url("fonts/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway-Regular.woff") format("woff"), url("fonts/Raleway-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: bold;
+  src        : url("fonts/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold.woff") format("woff"), url("fonts/Raleway-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 600;
+  src        : url("fonts/Raleway-SemiBold.woff2") format("woff2"), url("fonts/Raleway-SemiBold.woff") format("woff"), url("fonts/Raleway-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style : italic;
+  src        : url("fonts/Playfair-Display-Italic.woff2") format("woff2"),url("fonts/Playfair-Display-Italic.woff") format("woff"), url("fonts/Playfair-Display-Italic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  src        : url("fonts/Roboto-Condensed-Bold.woff2") format("woff2"), url("fonts/Roboto-Condensed-Bold.woff") format("woff"), url("fonts/Roboto-Condensed-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Helvetica LT Std";
+  src        : url("fonts/Helvetica-LT-Std-Roman.woff2") format("woff2"), url("fonts/.woff") format("woff"), url("fonts/.ttf") format("ttf");
+}
+
 body {
-  background: url("images/body.jpg") no-repeat;
-  margin    : 0;
-  padding   : 0;
+  background : url("images/body.jpg") no-repeat;
+  font-family: "Montserrat", sans-serif;
+  margin     : 0;
+  padding    : 0;
 }
 
 a {
@@ -52,21 +91,21 @@ figure {
 
 .button-arrow_square {
   background-color   : #f2d800;
-  background-position: 9px -63px;
+  background-position: -20px -29px;
 }
 
 .button-arrow_square:hover {
-  background-position: 9px -37px;
+  background-position: 9px -29px;
 }
 
 .button-arrow_circle {
-  background-position: 9px -89px;
+  background-position: -51px -29px;
   border             : 2px solid #646464;
   border-radius      : 50%;
 }
 
 .button-arrow_circle:hover {
-  background-position: 9px -117px;
+  background-position: -81px -29px;
   border             : 2px solid transparent;
   box-shadow         : 0 0 25px 0 rgba(0, 0, 0, 0.16);
 }
@@ -96,7 +135,8 @@ figure {
 }
 
 .logo {
-  font: bold 32px "Montserrat", sans-serif;
+  font-size  : 32px;
+  font-weight: bold;
 }
 
 .nav__link {
@@ -106,7 +146,7 @@ figure {
 .nav__link_top {
   color         : #000;
   font-family   : "Montserrat", sans-serif;
-  padding       : 0 7px;
+  padding       : 5px 10px;
   text-transform: uppercase;
 }
 
@@ -142,16 +182,32 @@ figure {
   width        : 36px;
 }
 
+.social-links__link:hover {
+  background-color: #000;
+}
+
 .social-links__link_facebook {
-  background-position: 13px -174px;
+  background-position: 13px -81px;
+}
+
+.social-links__link_facebook:hover {
+  background-position: -10px -81px;
 }
 
 .social-links__link_instagram {
-  background-position: 8px -202px;
+  background-position: 8px -110px;
+}
+
+.social-links__link_instagram:hover {
+  background-position: -15px -110px;
 }
 
 .social-links__link_email {
-  background-position: 8px -232px;
+  background-position: 8px -139px;
+}
+
+.social-links__link_email:hover {
+  background-position: -15px -139px;
 }
 
 .main-page {
@@ -160,21 +216,20 @@ figure {
 
 .main-page__subtitle,
 .main-page__title {
+  font-family: "Playfair Display", sans-serif;
   font-style : italic;
   font-weight: normal;
   text-align : center;
 }
 
 .main-page__title {
-  font-family: "Playfair Display", sans-serif;
-  font-size  : 50px;
-  margin-top : 122px;
+  font-size : 50px;
+  margin-top: 122px;
 }
 
 .main-page__subtitle {
-  color      : #fff;
-  font-family: "Playfair Display", sans-serif;
-  font-size  : 24px;
+  color    : #fff;
+  font-size: 24px;
 }
 
 .main-page__shop {
@@ -291,13 +346,13 @@ figure {
 
 .rating__item_enabled {
   background-origin  : content-box;
-  background-position: 0 -267px;
+  background-position: 0 -174px;
   background-repeat  : no-repeat;
 }
 
 .rating__item_disabled {
   background-origin  : content-box;
-  background-position: 0 -290px;
+  background-position: -20px -174px;
   background-repeat  : no-repeat;
 }
 
@@ -340,7 +395,7 @@ figure {
 
 .tabs__content {
   color      : #787878;
-  font-size  : 18px;
+  font-size  : 16px;
   line-height: 24px;
   margin     : 15px 0 0;
 }
@@ -411,23 +466,23 @@ figure {
 }
 
 .delimiter-cross {
-  background: url("images/sprite.svg") 0 -160px no-repeat #fff;
+  background: url("images/sprite.svg") 0 -68px no-repeat #fff;
   height    : 13px;
   width     : 13px;
 }
 
 .delimiter-location {
-  background: url("images/sprite.svg") 0 -305px no-repeat;
+  background: url("images/sprite.svg") 0 -192px no-repeat;
   height    : 13px;
   width     : 9px;
 }
 
 .profile:hover .profile__location-delimiter {
-  background-position: 0 -320px;
+  background-position: -10px -192px;
 }
 
 .about-us__description {
-  font      : italic 22px/38px "Playfair Display", "Times New Roman", sans-serif;
+  font      : italic 22px/38px "Playfair Display", sans-serif;
   margin    : 20px 0;
   text-align: initial;
 }
@@ -510,7 +565,7 @@ figure {
 }
 
 .delimiter-zigzag {
-  background: url("images/sprite.svg") 0 -15px no-repeat;
+  background: url("images/sprite.svg") 0 -22px no-repeat;
   height    : 6px;
   width     : 35px;
 }
@@ -528,7 +583,7 @@ figure {
 
 .delimiter-zigzag_selected,
 .profile:hover .profile__delimiter {
-  background-position: 0 -30px;
+  background-position: -35px -22px;
 }
 
 .carousel__next,
@@ -693,7 +748,7 @@ figure {
 }
 
 .facebook__title {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .facebook__likes {
@@ -706,7 +761,8 @@ figure {
   color           : #4b4f56;
   display         : inline-block;
   font            : bold 12px/13px "Helvetica LT Std", sans-serif;
-  padding         : 4px 10px;
+  letter-spacing: 1px;
+  padding         : 8px 10px 4px;
   text-transform  : capitalize;
 }
 
@@ -715,8 +771,8 @@ figure {
   content       : "";
   display       : inline-block;
   height        : 12px;
-  margin-right  : 5px;
-  vertical-align: top;
+  margin-right  : 2px;
+  vertical-align: -1px;
   width         : 12px;
 }
 
@@ -776,7 +832,7 @@ figure {
 }
 
 .copyright {
-  font: 12px "Raleway SemiBold", sans-serif;
+  font: 600 12px "Raleway", sans-serif;
 }
 
 .footer__nav {
@@ -805,7 +861,7 @@ figure {
 }
 
 .form-subscribe__textbox {
-  background: url("images/sprite.svg") 1px -333px no-repeat;
+  background: url("images/sprite.svg") 1px -205px no-repeat;
   border    : none;
   color     : #4d4d4d;
   font      : 14px/34px "Raleway", sans-serif;
@@ -818,10 +874,10 @@ figure {
 }
 
 .form-subscribe__submit {
-  background : url("images/sprite.svg") 0 -363px no-repeat;
+  background : url("images/sprite.svg") 0 -235px no-repeat;
   border     : none;
   float      : right;
   line-height: 34px;
   padding    : 0;
-  width      : 22px;
+  width      : 24px;
 }
