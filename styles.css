@@ -462,7 +462,7 @@ figure {
   box-sizing      : border-box;
   color           : #000;
   display         : inline-block;
-  margin          : 25.641025641% 5.98290598291% 0 0;
+  margin          : 15.625vw 5.98290598291% 0 0;
   padding         : 5.98290598291% 8.547008547%;
   position        : relative;
   vertical-align  : top;
@@ -517,7 +517,7 @@ figure {
 
 .about-us__video {
   box-shadow: 1.25rem 1.25rem 3.125rem 0.3125rem rgba(0, 0, 0, 0.32);
-  margin-top: 47.8632478632%;
+  margin-top: 29.1666666667vw;
   width     : 42.735042735%;
 }
 
