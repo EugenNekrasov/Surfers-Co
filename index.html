@@ -35,8 +35,8 @@
 			</ul>
 		</header>
 		<main class="main-page">
-			<h1 class="main-page__title">Ride every wave as if it's your last</h1>
-			<h2 class="main-page__subtitle">We love the motion of the ocean</h2>
+			<h1 class="main-page__title wrapper">Ride every wave as if it's your last</h1>
+			<h2 class="main-page__subtitle wrapper">We love the motion of the ocean</h2>
 			<section class="main-page__shop wrapper">
 				<h3 class="main-page__shop-headline headline">Boards</h3>
 				<div class="shop">
@@ -120,9 +120,9 @@
 						src="images/about-us__video.jpg">
 				</div>
 			</section>
-			<section class="main-page__our-team wrapper">
+			<section class="main-page__our-team">
 				<h3 class="main-page__our-team-headline headline">Our team</h3>
-				<div class="carousel">
+				<div class="carousel wrapper">
 					<div class="carousel__prev button-arrow button-arrow_circle"></div>
 					<ul class="carousel__list">
 						<li class="carousel__item profile">
@@ -130,7 +130,7 @@
 								<img alt="Taj Burrow" class="profile__avatar"
 									src="images/profile__avatar1.jpg">
 								<h4 class="profile__name">Taj Burrow</h4>
-								<div class="profile__nickname">@taramos</div>
+								<div class="profile__nickname">@tajamos</div>
 								<div class="profile__delimiter delimiter-zigzag"></div>
 								<div class="profile__location">
 									<span class="profile__location-delimiter delimiter-location"></span>
@@ -138,7 +138,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="carousel__item profile">
+						<li class="carousel__item profile profile_selected">
 							<a class="profile__link" href="#">
 								<img alt="Malia Manuel" class="profile__avatar"
 									src="images/profile__avatar2.jpg">
@@ -181,46 +181,40 @@
 					<div class="carousel__next button-arrow button-arrow_circle"></div>
 				</div>
 			</section>
-			<section class="main-page__blog blog">
+			<section class="main-page__blog blog wrapper">
 				<h4 class="blog__title">latest updates</h4>
 				<div class="blog__delimiter delimiter-cross"></div>
 				<div class="blog__posts">
-					<div class="post">
-						<a class="post__link" href="#">
-							<div class="post__image-wrapper">
-								<img alt="Blog post picture 1" class="post__image"
-									src="images/post__image1.jpg">
-							</div>
-							<p class="post__caption">
-								Ellie Turner and Jobe Harris have taken out the 2016 British
-								National Surf Championships
-							</p>
-						</a>
-					</div>
-					<div class="post">
-						<a class="post__link" href="#">
-							<div class="post__image-wrapper">
-								<img alt="Blog post picture 2" class="post__image"
-									src="images/post__image2.jpg">
-							</div>
-							<p class="post__caption">
-								A large group of surfers invaded the coast of La Jolla Shores,
-								in California, with a single goal in mind
-							</p>
-						</a>
-					</div>
-					<div class="post">
-						<a class="post__link" href="#">
-							<div class="post__image-wrapper">
-								<img alt="Blog post picture 3" class="post__image"
-										 src="images/post__image3.jpg">
-							</div>
-							<p class="post__caption">
-								Surfboards are constantly evolving, and there are multiple board
-								designs for a broad range of environments
-							</p>
-						</a>
-					</div>
+					<a class="post" href="#">
+						<div class="post__image-wrapper">
+							<img alt="Blog post picture 1" class="post__image"
+								src="images/post__image1.jpg">
+						</div>
+						<p class="post__caption">
+							Ellie Turner and Jobe Harris have taken out the 2016 British
+							National Surf Championships
+						</p>
+					</a>
+					<a class="post" href="#">
+						<div class="post__image-wrapper">
+							<img alt="Blog post picture 2" class="post__image"
+								src="images/post__image2.jpg">
+						</div>
+						<p class="post__caption">
+							A large group of surfers invaded the coast of La Jolla Shores,
+							in California, with a single goal in mind
+						</p>
+					</a>
+					<a class="post" href="#">
+						<div class="post__image-wrapper">
+							<img alt="Blog post picture 3" class="post__image"
+									 src="images/post__image3.jpg">
+						</div>
+						<p class="post__caption">
+							Surfboards are constantly evolving, and there are multiple board
+							designs for a broad range of environments
+						</p>
+					</a>
 				</div>
 				<a class="blog__show-all button" href="#">view all posts</a>
 			</section>
@@ -233,7 +227,7 @@
 							<img alt="Instagram logo" class="instagram__logo"
 								src="images/instagram__logo.png">
 							<span class="instagram__slogan">follow us</span>
-							<span class="instagram__nickname">@surferco</span>
+							<span class="instagram__nickname">@surfersco</span>
 						</footer>
 					</a>
 				</section>
@@ -318,10 +312,7 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__wrapper wrapper clearfix">
-				<div class="footer__copyright copyright">
-					© 2017 Surfers Co. &nbsp; ● &nbsp; Design by @lucaalco
-				</div>
+			<div class="footer__wrapper wrapper">
 				<nav class="footer__nav nav">
 					<a class="nav__link nav__link_bottom" href="#">About</a>
 					<a class="nav__link nav__link_bottom" href="#">Boards</a>
@@ -332,6 +323,9 @@
 					<a class="nav__link nav__link_bottom" href="#">Dealers</a>
 					<a class="nav__link nav__link_bottom" href="#">Contact us</a>
 				</nav>
+				<div class="footer__copyright copyright">
+					© 2017 Surfers Co. &nbsp; ● &nbsp; Design by @lucaalco
+				</div>
 				<form class="footer__subscribe form-subscribe">
 					<label class="form-subscribe__title" for="user_email">
 						Subscribe to our newsletter
