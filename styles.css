@@ -463,7 +463,7 @@ figure {
   color           : #000;
   display         : inline-block;
   margin          : 25.641025641% 5.98290598291% 0 0;
-  padding         : 5.98290598291% 8.547008547% 0;
+  padding         : 5.98290598291% 8.547008547%;
   position        : relative;
   vertical-align  : top;
   width           : 48.7179487179%;
@@ -473,7 +473,7 @@ figure {
   background-color: inherit;
   content         : '';
   height          : 100%;
-  left            : -1000px;
+  left            : -900px;
   position        : absolute;
   top             : 0;
   width           : 1000px;
