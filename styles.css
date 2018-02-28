@@ -766,7 +766,7 @@ figure {
 .main-page__facebook {
   box-sizing      : border-box;
   margin          : 5.12820512821% 5.12820512821% 0 0;
-  min-width       : 320px;
+  min-width       : 310px;
   padding         : 2.5641025641% 4.2735042735%;
   width           : 37.6068376068%;
 }
@@ -1041,7 +1041,7 @@ figure {
   }
 
   .main-page__about-us {
-    margin-bottom: 120px;
+    margin-bottom: 7%;
   }
 
   .about-us__title {
@@ -1164,4 +1164,223 @@ figure {
   .form-subscribe__textbox {
     box-sizing: border-box;
   }
+}
+
+@media screen and (max-width: 910px) {
+  .header {
+    flex-direction: column;
+    margin-bottom : 4.3956043956%;
+  }
+
+  .social-links, .main-page__title, .main-page__subtitle {
+    display: none;
+  }
+
+  .shop {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop__photo {
+    padding: 5px;
+  }
+
+  .shop__previews {
+    width: 9.33333333333%;
+  }
+
+  .shop__preview-image {
+    width  : 100%;
+  }
+
+  .shop__article {
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : space-between;
+    padding-top     : 0;
+  }
+
+  .shop__title {
+    font-size  : 0.875rem;
+    font-weight: normal;
+    line-height: normal;
+  }
+
+  .shop__rating {
+    margin-top  : 0;
+  }
+
+  .rating__total {
+    font-weight: normal;
+  }
+
+  .shop__tabs {
+    margin: 2.53164556962% auto;
+  }
+
+  .tabs__content {
+    margin-bottom: 0;
+  }
+
+  .shop__inner {
+    order: 1;
+  }
+
+  .shop__price {
+    font-size   : 1rem;
+    font-weight : normal;
+    margin-right: 15px;
+  }
+
+  .button {
+    font-weight: normal;
+  }
+
+  .shop__view-all {
+    align-self: center;
+    margin    : 0;
+  }
+
+  .link {
+    border-bottom-width : 0.0625rem;
+    font-size           : 0.875rem;
+    font-weight         : normal;
+  }
+
+  .main-page__shop {
+    margin-bottom: 5%;
+  }
+
+  .main-page__about-us {
+    margin-bottom: 5.35714285714%;
+  }
+
+  .about-us__article {
+    padding: 4.9914529911% 4.2735042735% 0 4.2735042735%;
+  }
+
+  .about-us__article:before {
+    left: -1000px;
+  }
+
+  .about-us__title {
+    font-size     : 0.875rem;
+    letter-spacing: 0;
+  }
+
+  .about-us__description {
+    font-size: 0.8125rem;
+  }
+
+  .main-page__our-team {
+    margin-bottom: 14.36%;
+  }
+
+  .carousel {
+    padding: 0;
+  }
+
+  .carousel__list {
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : center;
+    text-align      : center;
+    width           : 80%;
+  }
+
+  .carousel__item {
+    margin  : 5px;
+    padding : 2.98210735586% 6%;
+  }
+
+  .profile__name {
+    font-size: 0.8125rem;
+  }
+
+  .profile__nickname,
+  .profile__location {
+    font-size: 0.75rem;
+  }
+
+  .profile__delimiter {
+    width: 25px;
+  }
+
+  .blog__title {
+    font-size     : 0.875rem;
+    letter-spacing: 0;
+  }
+
+  .post {
+    width: 33.333333333%;
+  }
+
+  .main-page__blog {
+    margin-bottom: 10%;
+  }
+
+  .main-page__social {
+    align-items : flex-end;
+  }
+
+  .main-page__instagram {
+    margin: 0 auto -46px 0;
+  }
+
+  .instagram__footer {
+    padding: 13px;
+  }
+
+  .main-page__facebook {
+    flex-grow: 0.7;
+    margin: 0;
+  }
+
+  .instagram__logo {
+    width: 20px;
+  }
+
+  .instagram__slogan {
+    font-size: 1rem;
+  }
+
+  .instagram__nickname {
+    font-size: 0.8rem;
+  }
+
+  .footer__wrapper {
+    flex-flow: row-reverse nowrap;
+  }
+
+  .footer__nav {
+    box-sizing  : border-box;
+    flex-grow   : 0.7;
+    height      : 7rem;
+    margin-left : 0;
+    min-width   : 310px;
+    padding-left: 15px;
+    width       : 37.6068376068%;
+  }
+
+  .nav__link_bottom {
+    background-position: 0 11px;
+    font-size          : 0.75rem;
+    padding            : 7px 0 7px 25px;
+    width              : auto;
+  }
+
+  .footer__copyright {
+    font-size   : 0.625rem;
+    margin-right: auto;
+    margin-top  : 55px;
+    width       : 47.991453%;
+  }
+
+  .footer__subscribe {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
 }
