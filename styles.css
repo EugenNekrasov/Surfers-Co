@@ -606,7 +606,7 @@ figure {
 }
 
 .delimiter-zigzag {
-  background: url("images/sprite.svg") 0 -22px no-repeat;
+  background: url("images/sprite.svg") 0 5.6% / 320% no-repeat;
   height    : 6px;
   width     : 35px;
 }
@@ -629,7 +629,7 @@ figure {
 
 .profile:hover .profile__delimiter,
 .profile_selected .profile__delimiter {
-  background-position: -35px -22px;
+  background-position: 46% 5.6%;
 }
 
 .carousel__next,
@@ -750,7 +750,6 @@ figure {
 
 .instagram__logo {
   margin-right: 3.22580645161%;
-  width       : 5.16129032258%;
 }
 
 .instagram__slogan {
