@@ -321,7 +321,6 @@ figure {
 
 .shop__preview-image {
   display: block;
-  height : auto;
 }
 
 .shop__title {
@@ -361,7 +360,6 @@ figure {
 }
 
 .rating__measure {
-  display       : inline-block;
   font-size     : 0;
 }
 
@@ -1000,7 +998,7 @@ figure {
   }
 
   .shop__tabs {
-    margin: 5.06329113924% 0 5.06329113924%;
+    margin: 5.06329113924% 0;
   }
 
   .tabs__item {
