@@ -335,10 +335,6 @@ figure {
   outline-offset: -0.125rem;
 }
 
-.shop__preview-image {
-  display: block;
-}
-
 .shop__title {
   font-size  : 1.25rem;
   font-weight: bold;
@@ -1337,7 +1333,7 @@ figure {
 
   .main-page__facebook {
     flex-grow: 0.7;
-    margin: 0;
+    margin   : 0;
   }
 
   .instagram__logo {
