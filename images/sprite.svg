@@ -18,6 +18,7 @@
       <circle r="10.5" cy="11" cx="11" fill="#00B0FF" stroke="#00B0FF" stroke-width="2" stroke-opacity="0.4"/>
       <path fill-opacity="0" stroke-linecap="round" stroke="#fff" d="m11,6l5,5l-5,5m5,-5l-11,0"/>
     </g>
+    <path id="rounded-line" stroke-linecap="round" stroke-width="2" d="m1,1l8,0m-8,4l8,0m-8,4l8,0"/>
   </defs>
   <g stroke="#F2D800">
     <use xlink:href="#zigzag"/>
@@ -56,4 +57,6 @@
   <use xlink:href="#delimiter-location" y="192" x="10" fill="#b3e7ff"/>
   <use xlink:href="#logo-email" y="214" filter="url(#grayscale-sepia)" stroke="#000"/>
   <use xlink:href="#form-subscribe__submit" y="240" x="1"/>
+  <use xlink:href="#rounded-line" y="270" stroke="#000"/>
+  <use xlink:href="#rounded-line" y="270" x="15" stroke="#676767"/>
 </svg>
