@@ -1370,10 +1370,13 @@ figure {
   }
 
   .footer__copyright {
-    font-size   : 0.625rem;
     margin-right: auto;
     margin-top  : 55px;
     width       : 47.991453%;
+  }
+
+  .copyright {
+    font-size : 0.625rem;
   }
 
   .footer__subscribe {
