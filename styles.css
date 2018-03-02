@@ -1385,5 +1385,270 @@ figure {
 }
 
 @media screen and (max-width: 560px) {
+  body {
+    background-size: 140%;
+  }
 
+  .header {
+    flex-direction: row;
+    flex-wrap     : wrap;
+    margin        : 5% auto;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__nav {
+    display  : none;
+    font-size: 0;
+  }
+
+  .nav__link_top {
+    box-sizing: border-box;
+    display   : inline-block;
+    width     : 33.33333333%;
+  }
+
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .shop {
+    flex-direction: column;
+    margin        : 0;
+  }
+
+  .shop__photo {
+    width: 50%;
+  }
+
+  .shop__previews {
+    display        : flex;
+    justify-content: center;
+    margin         : 0 auto 10px auto;
+    width          : 75%;
+  }
+
+  .shop__preview, .shop__preview:last-child {
+    margin: 5px;
+  }
+
+  .shop__scroll {
+    display         : flex;
+    justify-content : space-between;
+    left            : 0;
+    right           : auto;
+    top             : 33vw;
+    width           : 100%;
+  }
+
+  .shop__pagination {
+    background-color: #929090;
+    top             : 0;
+  }
+
+  .tabs__content {
+    color       : #606060;
+    line-height : 1.25rem;
+    margin-top  : 7px;
+  }
+
+  .main-page__about-us {
+    background-size: 200%;
+  }
+
+  .about-us__article {
+    box-shadow    : 0px 0px 15px 3px #00000066;
+    margin        : 10% 10% 0;
+    padding-bottom: 4.9914529911%;
+    width         : 80%;
+  }
+
+  .about-us__article::before {
+    content: none;
+  }
+
+  .about-us__description {
+    font-style  : normal;
+    line-height : 1.5rem;
+  }
+
+  .about-us__video {
+    display: none;
+  }
+
+  .carousel__prev,
+  .carousel__next {
+    margin-top: 0;
+  }
+
+  .carousel__prev {
+    margin-left: 1%;
+  }
+
+  .carousel__next {
+    margin-right: 1%;
+  }
+
+  .carousel__list {
+    align-items   : center;
+    flex-flow     : column nowrap;
+    height        : 80vh;
+  }
+
+  .carousel__item,
+  .carousel__item:nth-child(even),
+  .carousel__item:not(:first-child)
+   {
+    box-sizing : border-box;
+    margin     : 5px;
+    min-height : 81px;
+    position   : static;
+    width      : 90%;
+    z-index    : auto;
+  }
+
+  .profile {
+    display        : flex;
+    justify-content: space-around;
+  }
+
+  .profile__text {
+    min-width: 120px;
+  }
+
+  .profile__avatar {
+    height: 100%;
+    margin: 0;
+    width : 63px;
+  }
+
+  .profile__delimiter {
+    height: 4px;
+    margin: 5px auto;
+  }
+
+  .profile__location-delimiter {
+    margin-right: 3px;
+  }
+
+  .main-page__our-team {
+    margin-bottom: 10%;
+  }
+
+  .blog__posts {
+    flex-direction: column;
+  }
+
+  .post {
+    display : flex;
+    margin  : 0;
+    width   : 100%;
+  }
+
+  .post__image-wrapper {
+    flex    : 1 0 155px;
+    position: relative;
+  }
+
+  .post__caption {
+    box-sizing : border-box;
+    font-size  : 0.75rem;
+    line-height: 1.0625rem;
+    margin     : 0;
+    max-height : 103.66px;
+    overflow   : hidden;
+    padding    : 3.57142857143%;
+  }
+
+  .main-page__social {
+    box-shadow    : 0 0 9px 1px #545454;
+    flex-wrap     : wrap;
+    margin-bottom : 10%;
+  }
+
+  .main-page__instagram {
+    flex             : 1 0 212px;
+    margin-bottom    : 0;
+  }
+
+  .instagram__photo {
+    display: none;
+  }
+
+  .instagram__footer {
+    padding: 20px 13px;
+  }
+
+  .main-page__facebook {
+    flex      : 1 0 212px;
+    min-width : initial;
+    padding   : 10px;
+  }
+
+  .facebook {
+    align-items: center;
+    background : none #385490;
+    display    : flex;
+  }
+
+  .facebook__logo {
+    background-position : -1% 87%;
+    background-size     : 220%;
+    height              : 20px;
+    margin              : 0 10px 0 0;
+    width               : 90px;
+  }
+
+  .facebook__profile {
+    background: none;
+    display   : inline-block;
+    padding   : 0;
+  }
+
+  .facebook__description {
+    background-position : -114.5px -96px;
+    background-size     : 250px;
+    height              : 40px;
+    margin-bottom       : 0;
+    padding             : 0 0 0 40px;
+  }
+
+  .facebook__title,
+  .facebook__likes,
+  .facebook__likebutton,
+  .facebook__sharebutton,
+  .facebook__members {
+    display: none;
+  }
+
+  .footer__wrapper {
+    align-items   : center;
+    flex-direction: column;
+    flex-wrap     : wrap;
+  }
+
+  .footer__nav {
+    align-items : center;
+    flex-grow   : initial;
+    margin      : 2% 0;
+    min-width   : auto;
+    padding-left: 0;
+    width       : 90%;
+  }
+
+  .nav__link_bottom {
+    width: 100px;
+  }
+
+  .footer__copyright {
+    align-self: auto;
+    margin    : 0 0 2% 0;
+    width     : auto;
+  }
 }
