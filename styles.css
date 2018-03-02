@@ -119,14 +119,14 @@ figure {
 }
 
 .button-arrow_circle {
-  background-position: -13% 7.8%;
-  background-size    : 280%;
+  background-position: -10% 8%;
+  background-size    : 300%;
   border             : 2px solid #646464;
   border-radius      : 50%;
 }
 
 .button-arrow_circle:hover {
-  background-position: 114% 7.8%;
+  background-position: 111.78% 8%;
   border             : 2px solid transparent;
   box-shadow         : 0 0 25px 0 rgba(0, 0, 0, 0.16);
 }
@@ -321,6 +321,7 @@ figure {
 .shop__preview {
   border       : 1px solid #ccc;
   cursor       : pointer;
+  font-size    : 0;
   margin-bottom: 0.1875rem;
 }
 
@@ -1183,8 +1184,9 @@ figure {
 
 @media screen and (max-width: 910px) {
   .header {
-    flex-direction: column;
-    margin-bottom : 4.3956043956%;
+    flex-direction  : column;
+    justify-content : center;
+    margin-bottom   : 4.3956043956%;
   }
 
   .social-links, .main-page__title, .main-page__subtitle {
@@ -1262,12 +1264,8 @@ figure {
     font-weight         : normal;
   }
 
-  .main-page__shop {
-    margin-bottom: 5%;
-  }
-
-  .main-page__about-us {
-    margin-bottom: 5.35714285714%;
+  .main-page__shop, .main-page__about-us {
+    margin-bottom: 10%;
   }
 
   .about-us__article {
@@ -1306,15 +1304,6 @@ figure {
   .carousel__item {
     margin  : 5px;
     padding : 2.98210735586% 6%;
-  }
-
-  .profile__name {
-    font-size: 0.8125rem;
-  }
-
-  .profile__nickname,
-  .profile__location {
-    font-size: 0.75rem;
   }
 
   .profile__delimiter {
