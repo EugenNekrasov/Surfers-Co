@@ -25,38 +25,38 @@
     <use xlink:href="#zigzag" x="6.33"/>
     <use xlink:href="#zigzag" x="12.66"/>
   </g>
-  <g stroke="#000" transform="translate(0 22)">
+  <g stroke="#000" transform="translate(0 30)">
     <use xlink:href="#zigzag"/>
     <use xlink:href="#zigzag" x="6.33"/>
     <use xlink:href="#zigzag" x="12.66"/>
     <use xlink:href="#zigzag" x="18.99"/>
     <use xlink:href="#zigzag" x="25.32"/>
   </g>
-  <g stroke="#0023ff" transform="translate(35 22)">
+  <g stroke="#0023ff" transform="translate(40 30)">
     <use xlink:href="#zigzag"/>
     <use xlink:href="#zigzag" x="6.33"/>
     <use xlink:href="#zigzag" x="12.66"/>
     <use xlink:href="#zigzag" x="18.99"/>
     <use xlink:href="#zigzag" x="25.32"/>
   </g>
-  <use xlink:href="#arrow" y="41" stroke="#000"/>
-  <use xlink:href="#arrow" y="41" x="30" stroke="#fff"/>
-  <use xlink:href="#arrow" y="41" x="60" stroke="#646464"/>
-  <use xlink:href="#arrow" y="41" x="90" stroke="#0022ff"/>
-  <use xlink:href="#cross" y="68" stroke="#000" stroke-width="2"/>
-  <use xlink:href="#logo-facebook" y="91" stroke-width="0"/>
-  <use xlink:href="#logo-facebook" y="91" x="23" fill="#fff" stroke-width="0"/>
-  <use xlink:href="#logo-instagram" y="118" x="23" fill="#fff" stroke-width="0"/>
-  <use xlink:href="#logo-instagram" y="118" stroke-width="0"/>
-  <use xlink:href="#logo-email" y="150" stroke-width="0"/>
-  <use xlink:href="#logo-email" y="150" x="23" fill="#fff" stroke-width="0"/>
-  <use xlink:href="#star" y="174" fill="#f2d800"/>
+  <use xlink:href="#arrow" y="50" stroke="#000"/>
+  <use xlink:href="#arrow" y="50" x="30" stroke="#fff"/>
+  <use xlink:href="#arrow" y="50" x="60" stroke="#646464"/>
+  <use xlink:href="#arrow" y="50" x="90" stroke="#0022ff"/>
+  <use xlink:href="#cross" y="85" stroke="#000" stroke-width="2"/>
+  <use xlink:href="#logo-facebook" y="110" stroke-width="0"/>
+  <use xlink:href="#logo-facebook" y="110" x="30" fill="#fff" stroke-width="0"/>
+  <use xlink:href="#logo-instagram" y="140" stroke-width="0"/>
+  <use xlink:href="#logo-instagram" y="140" x="30" fill="#fff" stroke-width="0"/>
+  <use xlink:href="#logo-email" y="175" stroke-width="0"/>
+  <use xlink:href="#logo-email" y="175" x="30" fill="#fff" stroke-width="0"/>
+  <use xlink:href="#logo-email" y="175" x="60" filter="url(#grayscale-sepia)" stroke="#000"/>
+  <use xlink:href="#star" y="200" fill="#f2d800"/>
   <use xlink:href="#star" fill-opacity="0" stroke="#606060" stroke-width="2"
-    transform="scale(0.73) translate(30 241)"/>
-  <use xlink:href="#delimiter-location" y="192" fill="#d9d9d9"/>
-  <use xlink:href="#delimiter-location" y="192" x="10" fill="#b3e7ff"/>
-  <use xlink:href="#logo-email" y="214" filter="url(#grayscale-sepia)" stroke="#000"/>
-  <use xlink:href="#form-subscribe__submit" y="240" x="1"/>
-  <use xlink:href="#rounded-line" y="270" stroke="#000"/>
-  <use xlink:href="#rounded-line" y="270" x="15" stroke="#676767"/>
+      transform="translate(25 202) scale(0.73)"/>
+  <use xlink:href="#delimiter-location" y="225" fill="#d9d9d9"/>
+  <use xlink:href="#delimiter-location" y="225" x="20" fill="#b3e7ff"/>
+  <use xlink:href="#form-subscribe__submit" y="250" x="1"/>
+  <use xlink:href="#rounded-line" y="290" stroke="#000"/>
+  <use xlink:href="#rounded-line" y="290" x="20" stroke="#676767"/>
 </svg>

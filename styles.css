@@ -72,7 +72,7 @@ figure {
 }
 
 .burger {
-  background: url("images/sprite.svg") 0 69.25% / 1080% no-repeat;
+  background: url("images/sprite.svg") 0 74.35% / 1080% no-repeat;
   cursor    : pointer;
   display   : none;
   height    : 20px;
@@ -110,23 +110,23 @@ figure {
 
 .button-arrow_square {
   background-color   : #f2d800;
-  background-position: 28% 7.8%;
+  background-position: 28% 10.3%;
   background-size    : 280%;
 }
 
 .button-arrow_square:hover {
-  background-position: -14% 7.8%;
+  background-position: -14% 10.3%;
 }
 
 .button-arrow_circle {
-  background-position: -10% 8%;
+  background-position: 70.4% 10.7%;
   background-size    : 300%;
   border             : 2px solid #646464;
   border-radius      : 50%;
 }
 
 .button-arrow_circle:hover {
-  background-position: 111.78% 8%;
+  background-position: 111.78% 10.7%;
   border             : 2px solid transparent;
   box-shadow         : 0 0 25px 0 rgba(0, 0, 0, 0.16);
 }
@@ -220,30 +220,30 @@ figure {
 }
 
 .social-links__link_facebook {
-  background-position: -17% 22.4%;
+  background-position: -17.5% 27.7%;
   background-size    : 310%;
 }
 
 .social-links__link_facebook:hover {
-  background-position: 13.8% 22.4%;
+  background-position: 22.8% 27.7%;
 }
 
 .social-links__link_instagram {
-  background-position: -17.3% 30%;
+  background-position: -17.3% 36%;
   background-size    : 255%;
 }
 
 .social-links__link_instagram:hover {
-  background-position: 15.7% 30%;
+  background-position: 27.7% 36%;
 }
 
 .social-links__link_email {
-  background-position: -10% 38.5%;
+  background-position: -10% 45.2%;
   background-size    : 320%;
 }
 
 .social-links__link_email:hover {
-  background-position: 20% 38.5%;
+  background-position: 29% 45.2%;
 }
 
 .main-page {
@@ -377,7 +377,6 @@ figure {
 
 .rating__item {
   background-image: url("images/sprite.svg");
-  cursor          : pointer;
   display         : inline-block;
   height          : 14px;
   padding-right   : 0.3125rem;
@@ -386,14 +385,16 @@ figure {
 
 .rating__item_enabled {
   background-origin  : content-box;
-  background-position: 0 -174px;
+  background-position: 0 52%;
   background-repeat  : no-repeat;
+  background-size    : 800%;
 }
 
 .rating__item_disabled {
   background-origin  : content-box;
-  background-position: -20px -174px;
+  background-position: 24% 52%;
   background-repeat  : no-repeat;
+  background-size    : 800%;
 }
 
 .rating__total {
@@ -513,17 +514,17 @@ figure {
 }
 
 .delimiter-cross {
-  background: url("images/sprite.svg") -1% 17.3% / 700% no-repeat #fff;
+  background: url("images/sprite.svg") -1% 21.8% / 700% no-repeat #fff;
   height    : 13px;
   width     : 13px;
 }
 
 .delimiter-location {
-  background: url("images/sprite.svg") 0 49.5% / 1250% no-repeat;
+  background: url("images/sprite.svg") 0 58% / 1250% no-repeat;
 }
 
 .profile:hover .profile__location-delimiter {
-  background-position: 10% 49.5%;
+  background-position: 19.7% 58%;
 }
 
 .about-us__description {
@@ -618,7 +619,7 @@ figure {
 }
 
 .delimiter-zigzag {
-  background: url("images/sprite.svg") 0 5.6% / 320% no-repeat;
+  background: url("images/sprite.svg") 0 7.7% / 320% no-repeat;
   height    : 6px;
   width     : 35px;
 }
@@ -641,7 +642,7 @@ figure {
 
 .profile:hover .profile__delimiter,
 .profile_selected .profile__delimiter {
-  background-position: 46% 5.6%;
+  background-position: 53% 7.7%;
 }
 
 .carousel__next,
@@ -937,7 +938,7 @@ figure {
 }
 
 .form-subscribe__textbox {
-  background: url("images/sprite.svg") 1px -205px no-repeat;
+  background: url("images/sprite.svg") -57px -165px no-repeat;
   border    : none;
   color     : #4d4d4d;
   font      : 0.875rem/2.125rem "Raleway", sans-serif;
@@ -951,7 +952,7 @@ figure {
 }
 
 .form-subscribe__submit {
-  background : url("images/sprite.svg") 0 -235px no-repeat;
+  background : url("images/sprite.svg") 0 66.7% no-repeat;
   border     : none;
   float      : right;
   line-height: 34px;
@@ -1366,7 +1367,6 @@ figure {
     background-position: 0 11px;
     font-size          : 0.75rem;
     padding            : 7px 0 7px 25px;
-    width              : auto;
   }
 
   .footer__copyright {
