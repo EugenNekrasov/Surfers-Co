@@ -295,7 +295,7 @@ figure {
 
 .shop__photo {
   margin-left: 2.91262135922%;
-  width      : 41.1650485437%;
+  min-width  : 41.1650485437%;
 }
 
 .shop__previews {
