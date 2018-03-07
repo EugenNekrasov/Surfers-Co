@@ -1215,9 +1215,11 @@ figure {
   }
 
   .shop__article {
+    box-sizing      : border-box;
     display         : flex;
     flex-wrap       : wrap;
     justify-content : space-between;
+    max-width       : 100%;
     padding-top     : 0;
   }
 
@@ -1431,7 +1433,8 @@ figure {
   }
 
   .shop__photo {
-    width: 50%;
+    height: 100%;
+    width : 50%;
   }
 
   .shop__previews {
@@ -1560,8 +1563,8 @@ figure {
   }
 
   .post__image-wrapper {
-    flex    : 1 0 155px;
-    position: relative;
+    flex   : 1 0 155px;
+	height : 105px;
   }
 
   .post__caption {
