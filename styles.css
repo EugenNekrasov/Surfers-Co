@@ -42,7 +42,7 @@
 }
 @font-face {
   font-family: "Helvetica LT Std";
-  src        : url("fonts/Helvetica-LT-Std-Roman.woff2") format("woff2"), url("fonts/.woff") format("woff"), url("fonts/.ttf") format("ttf");
+  src        : url("fonts/Helvetica-LT-Std-Roman.woff2") format("woff2"), url("fonts/Helvetica-LT-Std-Roman.woff") format("woff"), url("fonts/Helvetica-LT-Std-Roman.ttf") format("ttf");
 }
 
 html {
