@@ -1574,7 +1574,7 @@ figure {
     margin     : 0;
     max-height : 103.66px;
     overflow   : hidden;
-    padding    : 3.57142857143%;
+    padding    : 3.57142857143vw 3.57142857143%;
   }
 
   .main-page__social {
