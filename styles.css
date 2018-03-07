@@ -1643,7 +1643,7 @@ figure {
   .footer__nav {
     align-items : center;
     flex-grow   : initial;
-    margin      : 2% 0;
+    margin      : 2vw 0;
     min-width   : auto;
     padding-left: 0;
     width       : 90%;
