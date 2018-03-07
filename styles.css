@@ -296,6 +296,7 @@ figure {
 .shop__photo {
   margin-left: 2.91262135922%;
   min-width  : 41.1650485437%;
+  width      : 41.1650485437%;
 }
 
 .shop__previews {
@@ -304,7 +305,9 @@ figure {
 
 .shop__article {
   font-family: "Montserrat", sans-serif;
-  padding    : 4.36893203883% 4.854368932% 4.854368932% 5.82524271845%;
+  /*Pixels are in the padding because of Firefox's mechanism
+  for resolving height*/
+  padding    : 45px 4.854368932% 50px 5.82524271845%;
 }
 
 .shop__pagination {
@@ -648,7 +651,7 @@ figure {
 .carousel__next,
 .carousel__prev {
   height    : 38px;
-  margin-top: 2.5641025641%;
+  margin-top: 30px;
   width     : 38px;
 }
 
@@ -742,7 +745,7 @@ figure {
 }
 
 .main-page__instagram {
-  margin  : 0 4.2735042735% -19.2307692308% 0;
+  margin  : 0 4.2735042735% -225px 0;
   width   : 52.9914529915%;
   z-index : 1;
 }
@@ -778,9 +781,9 @@ figure {
 
 .main-page__facebook {
   box-sizing      : border-box;
-  margin          : 5.12820512821% 5.12820512821% 0 0;
+  margin          : 60px 5.12820512821% 0 0;
   min-width       : 310px;
-  padding         : 2.5641025641% 4.2735042735%;
+  padding         : 30px 4.2735042735%;
   width           : 37.6068376068%;
 }
 
@@ -906,14 +909,14 @@ figure {
   display      : flex;
   flex-flow    : column wrap;
   height       : 10rem;
-  margin       : 3.39805825243% 0 4.12371134021% auto;
+  margin       : 40px 0 48px auto;
   padding-right: 10.4166666667%;
   width        : 32.0388349515%;
 }
 
 .footer__copyright {
   align-self    : flex-start;
-  margin-bottom : 1.03092783505%;
+  margin-bottom : 12px;
 }
 
 .copyright {
@@ -921,7 +924,7 @@ figure {
 }
 
 .footer__subscribe {
-  margin-bottom : 7.21649484536%;
+  margin-bottom : 85px;
   margin-right  : 17.094017094%;
   width         : 25.641025641%;
 }
@@ -1006,7 +1009,10 @@ figure {
   }
 
   .shop__article {
-    padding: 2.427184466% 2.427184466% 2.427184466% 2.91262135922%;
+    /* Fix for Firefox ensures that vertical padding of the flex-item will be calculated relatively of the parent's width (height by default). It takes width of .main-page__shop, substracts margins
+    of .shop and returns 2.427184466% of it:
+    calc(93.6vw * (1 - 0.0598290598291 * 2) * 0.02427184466) = 2vw */
+    padding : 2vw 2.427184466% 2vw 2.91262135922%;
   }
 
   .shop__tabs {
@@ -1133,7 +1139,7 @@ figure {
   }
 
   .main-page__instagram {
-    margin: 0 9.273504% -19.2307692308% 0;
+    margin: 0 9.273504% -18vw 0;
     width : 47.991453%;
   }
 
@@ -1156,7 +1162,7 @@ figure {
 
   .footer__nav {
     margin-left   : 57.5444983818%;
-    margin-top    : 1.69902912621%;
+    margin-top    : 1.59029126213vw;
     padding-right : 0;
     width         : 42.4555016182%
   }
@@ -1166,7 +1172,7 @@ figure {
   }
 
   .footer__subscribe {
-    margin-bottom: 2.5641025641%;
+    margin-bottom: 2.4vw;
   }
 
   .form-subscribe__title {
@@ -1229,7 +1235,7 @@ figure {
   }
 
   .shop__tabs {
-    margin: 2.53164556962% auto;
+    margin: 1.9746835443vw auto;
   }
 
   .tabs__content {
@@ -1300,7 +1306,7 @@ figure {
 
   .carousel__item {
     margin  : 5px;
-    padding : 2.98210735586% 6%;
+    padding : 2.23300198807vw 6%;
   }
 
   .profile__delimiter {
@@ -1356,7 +1362,7 @@ figure {
   .footer__nav {
     box-sizing  : border-box;
     flex-grow   : 0.7;
-    height      : 7rem;
+    height      : 7.3rem;
     margin-left : 0;
     min-width   : 310px;
     padding-left: 15px;
@@ -1496,9 +1502,10 @@ figure {
   }
 
   .carousel__list {
-    align-items   : center;
-    flex-flow     : column nowrap;
-    height        : 80vh;
+    align-items: center;
+    flex-flow  : column nowrap;
+    height     : 80vh;
+    width      : 75%;
   }
 
   .carousel__item,
@@ -1523,9 +1530,9 @@ figure {
   }
 
   .profile__avatar {
-    height: 100%;
-    margin: 0;
-    width : 63px;
+    align-self: center;
+    margin    : 0;
+    width     : 63px;
   }
 
   .profile__delimiter {
@@ -1648,7 +1655,7 @@ figure {
 
   .footer__copyright {
     align-self: auto;
-    margin    : 0 0 2% 0;
+    margin    : 0 0 2vw 0;
     width     : auto;
   }
 }
