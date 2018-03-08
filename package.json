@@ -4,7 +4,8 @@
   "description": "Study site with surfers theme.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style expanded -o dist src/scss"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/gendalf7771/Surfers-Co/issues"
   },
-  "homepage": "https://github.com/gendalf7771/Surfers-Co#readme"
+  "homepage": "https://github.com/gendalf7771/Surfers-Co#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
 }
