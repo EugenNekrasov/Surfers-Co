@@ -1,0 +1,24 @@
+{
+  "name": "surfers-co",
+  "version": "1.0.0",
+  "description": "Study site with surfers theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gendalf7771/Surfers-Co.git"
+  },
+  "keywords": [
+    "surfing",
+    "surfboards",
+    "shop"
+  ],
+  "author": "Eugen Nekrasov",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gendalf7771/Surfers-Co/issues"
+  },
+  "homepage": "https://github.com/gendalf7771/Surfers-Co#readme"
+}
