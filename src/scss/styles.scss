@@ -241,7 +241,8 @@ figure {
 
 .shop {
   align-items: center;
-  background : linear-gradient(129.5deg, #00d2ff 34%, transparent 34%) -1.4em no-repeat #fff;
+  background : linear-gradient(129.5deg, #00d2ff 34%, transparent 34%)
+               -1.4em no-repeat #fff;
   box-shadow : 0 -0.625rem 3.125rem 0 rgba(0, 0, 0, 0.32);
   display    : flex;
   margin     : 0 5.98290598291%;
@@ -334,7 +335,7 @@ figure {
 }
 
 .rating__measure {
-  font-size     : 0;
+  font-size : 0;
 }
 
 .rating__item {
@@ -529,12 +530,11 @@ figure {
 }
 
 .carousel__item {
-  cursor          : pointer;
-  display         : inline-block;
-  padding         : 2.98210735586% 0 4.97017892644% 0;
-  position        : relative;
-  width           : 26%;
-}
+  cursor  : pointer;
+  display : inline-block;
+  padding : 2.98210735586% 0 4.97017892644% 0;
+  position: relative;
+  width   : 26%;
 
   &:not(:first-child) {
     margin-left: -1.25rem;
@@ -640,16 +640,15 @@ figure {
 }
 
 .blog__posts {
-  display         : flex;
-  justify-content : center;
-  margin-bottom   : 2.5641025641%;
+  display        : flex;
+  justify-content: center;
+  margin-bottom  : 2.5641025641%;
 }
 
 .post {
-  cursor : pointer;
-  margin : 0 1.28205128205%;
-  width  : 23.0769230769%;
-}
+  cursor: pointer;
+  margin: 0 1.28205128205%;
+  width : 23.0769230769%;
 
   &:hover {
     box-shadow: 0 0 1.5625rem 0 rgba(0, 0, 0, 0.32);
@@ -705,9 +704,9 @@ figure {
 }
 
 .main-page__instagram {
-  margin  : 0 4.2735042735% -225px 0;
-  width   : 52.9914529915%;
-  z-index : 1;
+  margin : 0 4.2735042735% -225px 0;
+  width  : 52.9914529915%;
+  z-index: 1;
 }
 .instagram {
   font-size: 0;
@@ -740,11 +739,11 @@ figure {
 }
 
 .main-page__facebook {
-  box-sizing      : border-box;
-  margin          : 60px 5.12820512821% 0 0;
-  min-width       : 310px;
-  padding         : 30px 4.2735042735%;
-  width           : 37.6068376068%;
+  box-sizing: border-box;
+  margin    : 60px 5.12820512821% 0 0;
+  min-width : 310px;
+  padding   : 30px 4.2735042735%;
+  width     : 37.6068376068%;
 }
 
 .facebook {
@@ -875,8 +874,8 @@ figure {
 }
 
 .footer__copyright {
-  align-self    : flex-start;
-  margin-bottom : 12px;
+  align-self   : flex-start;
+  margin-bottom: 12px;
 }
 
 .copyright {
@@ -884,9 +883,9 @@ figure {
 }
 
 .footer__subscribe {
-  margin-bottom : 85px;
-  margin-right  : 17.094017094%;
-  width         : 25.641025641%;
+  margin-bottom: 85px;
+  margin-right : 17.094017094%;
+  width        : 25.641025641%;
 }
 
 .form-subscribe {
@@ -973,7 +972,7 @@ figure {
     /* Fix for Firefox ensures that vertical padding of the flex-item will be calculated relatively of the parent's width (height by default). It takes width of .main-page__shop, substracts margins
     of .shop and returns 2.427184466% of it:
     calc(93.6vw * (1 - 0.0598290598291 * 2) * 0.02427184466) = 2vw */
-    padding : 2vw 2.427184466% 2vw 2.91262135922%;
+    padding: 2vw 2.427184466% 2vw 2.91262135922%;
   }
 
   .shop__tabs {
@@ -1122,10 +1121,10 @@ figure {
   }
 
   .footer__nav {
-    margin-left   : 57.5444983818%;
-    margin-top    : 1.59029126213vw;
-    padding-right : 0;
-    width         : 42.4555016182%
+    margin-left  : 57.5444983818%;
+    margin-top   : 1.59029126213vw;
+    padding-right: 0;
+    width        : 42.4555016182%
   }
 
   .footer__copyright {
@@ -1148,9 +1147,9 @@ figure {
 
 @media screen and (max-width: 910px) {
   .header {
-    flex-direction  : column;
-    justify-content : center;
-    margin-bottom   : 4.3956043956%;
+    flex-direction : column;
+    justify-content: center;
+    margin-bottom  : 4.3956043956%;
   }
 
   .social-links, .main-page__title, .main-page__subtitle {
@@ -1158,7 +1157,7 @@ figure {
   }
 
   .shop {
-    flex-wrap: wrap;
+    flex-wrap      : wrap;
     justify-content: center;
   }
 
@@ -1171,16 +1170,16 @@ figure {
   }
 
   .shop__preview-image {
-    width  : 100%;
+    width: 100%;
   }
 
   .shop__article {
-    box-sizing      : border-box;
-    display         : flex;
-    flex-wrap       : wrap;
-    justify-content : space-between;
-    max-width       : 100%;
-    padding-top     : 0;
+    box-sizing     : border-box;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    max-width      : 100%;
+    padding-top    : 0;
   }
 
   .shop__title {
@@ -1190,7 +1189,7 @@ figure {
   }
 
   .shop__rating {
-    margin-top  : 0;
+    margin-top: 0;
   }
 
   .rating__total {
@@ -1225,9 +1224,9 @@ figure {
   }
 
   .link {
-    border-bottom-width : 0.0625rem;
-    font-size           : 0.875rem;
-    font-weight         : normal;
+    border-bottom-width: 0.0625rem;
+    font-size          : 0.875rem;
+    font-weight        : normal;
   }
 
   .main-page__shop, .main-page__about-us {
@@ -1238,7 +1237,7 @@ figure {
     padding: 4.9914529911% 4.2735042735% 0 4.2735042735%;
   }
 
-  .about-us__article:before {
+  .about-us__article::before {
     left: -1000px;
   }
 
@@ -1260,16 +1259,16 @@ figure {
   }
 
   .carousel__list {
-    display         : flex;
-    flex-wrap       : wrap;
-    justify-content : center;
-    text-align      : center;
-    width           : 80%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    text-align     : center;
+    width          : 80%;
   }
 
   .carousel__item {
-    margin  : 5px;
-    padding : 2.23300198807vw 6%;
+    margin : 5px;
+    padding: 2.23300198807vw 6%;
   }
 
   .profile__delimiter {
@@ -1290,7 +1289,7 @@ figure {
   }
 
   .main-page__social {
-    align-items : flex-end;
+    align-items: flex-end;
   }
 
   .main-page__instagram {
@@ -1345,7 +1344,7 @@ figure {
   }
 
   .copyright {
-    font-size : 0.625rem;
+    font-size: 0.625rem;
   }
 
   .footer__subscribe {
@@ -1409,12 +1408,12 @@ figure {
   }
 
   .shop__scroll {
-    display         : flex;
-    justify-content : space-between;
-    left            : 0;
-    right           : auto;
-    top             : 33vw;
-    width           : 100%;
+    display        : flex;
+    justify-content: space-between;
+    left           : 0;
+    right          : auto;
+    top            : 33vw;
+    width          : 100%;
   }
 
   .shop__pagination {
@@ -1423,9 +1422,9 @@ figure {
   }
 
   .tabs__content {
-    color       : #606060;
-    line-height : 1.25rem;
-    margin-top  : 7px;
+    color      : #606060;
+    line-height: 1.25rem;
+    margin-top : 7px;
   }
 
   .main-page__about-us {
@@ -1444,8 +1443,8 @@ figure {
   }
 
   .about-us__description {
-    font-style  : normal;
-    line-height : 1.5rem;
+    font-style : normal;
+    line-height: 1.5rem;
   }
 
   .about-us__video {
@@ -1518,14 +1517,14 @@ figure {
   }
 
   .post {
-    display : flex;
-    margin  : 0;
-    width   : 100%;
+    display: flex;
+    margin : 0;
+    width  : 100%;
   }
 
   .post__image-wrapper {
-    flex   : 1 0 155px;
-	height : 105px;
+    flex  : 1 0 155px;
+    height: 105px;
   }
 
   .post__caption {
@@ -1539,14 +1538,14 @@ figure {
   }
 
   .main-page__social {
-    box-shadow    : 0 0 9px 1px #545454;
-    flex-wrap     : wrap;
-    margin-bottom : 10%;
+    box-shadow   : 0 0 9px 1px #545454;
+    flex-wrap    : wrap;
+    margin-bottom: 10%;
   }
 
   .main-page__instagram {
-    flex             : 1 0 212px;
-    margin-bottom    : 0;
+    flex         : 1 0 212px;
+    margin-bottom: 0;
   }
 
   .instagram__photo {
@@ -1558,9 +1557,9 @@ figure {
   }
 
   .main-page__facebook {
-    flex      : 1 0 212px;
-    min-width : initial;
-    padding   : 10px;
+    flex     : 1 0 212px;
+    min-width: initial;
+    padding  : 10px;
   }
 
   .facebook {
@@ -1570,11 +1569,11 @@ figure {
   }
 
   .facebook__logo {
-    background-position : -1% 87%;
-    background-size     : 220%;
-    height              : 20px;
-    margin              : 0 10px 0 0;
-    width               : 90px;
+    background-position: -1% 87%;
+    background-size    : 220%;
+    height             : 20px;
+    margin             : 0 10px 0 0;
+    width              : 90px;
   }
 
   .facebook__profile {
@@ -1584,11 +1583,11 @@ figure {
   }
 
   .facebook__description {
-    background-position : -114.5px -96px;
-    background-size     : 250px;
-    height              : 40px;
-    margin-bottom       : 0;
-    padding             : 0 0 0 40px;
+    background-position: -114.5px -96px;
+    background-size    : 250px;
+    height             : 40px;
+    margin-bottom      : 0;
+    padding            : 0 0 0 40px;
   }
 
   .facebook__title,
