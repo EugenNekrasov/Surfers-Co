@@ -129,11 +129,11 @@ figure {
   font-weight   : 500;
   padding       : 0.3125rem 0.625rem;
   text-transform: uppercase;
-}
-
-.nav__link_top:hover {
-  background-color: #00b0ff;
-  color           : #fff;
+  
+  &:hover {
+    background-color: #00b0ff;
+    color           : #fff;
+  }
 }
 
 .nav__link_bottom {
@@ -143,10 +143,10 @@ figure {
   font-family: "Raleway", sans-serif;
   padding    : 10px 0 10px 30px;
   width      : 50%;
-}
 
-.nav__link_bottom:hover {
-  font-weight: bold;
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .social-links {
@@ -156,10 +156,10 @@ figure {
 .social-links__item {
   display     : inline-block;
   margin-right: 10px;
-}
 
-.social-links__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-links__link {
@@ -168,37 +168,37 @@ figure {
   display      : block;
   height       : 36px;
   width        : 36px;
-}
-
-.social-links__link:hover {
-  background-color: #000;
+  
+  &:hover {
+    background-color: #000;
+  }
 }
 
 .social-links__link_facebook {
   background-position: -17.5% 27.7%;
   background-size    : 310%;
-}
 
-.social-links__link_facebook:hover {
-  background-position: 22.8% 27.7%;
+  &:hover {
+    background-position: 22.8% 27.7%;
+  }
 }
 
 .social-links__link_instagram {
   background-position: -17.3% 36%;
   background-size    : 255%;
-}
 
-.social-links__link_instagram:hover {
-  background-position: 27.7% 36%;
+  &:hover {
+    background-position: 27.7% 36%;
+  }
 }
 
 .social-links__link_email {
   background-position: -10% 45.2%;
   background-size    : 320%;
-}
 
-.social-links__link_email:hover {
-  background-position: 29% 45.2%;
+  &:hover {
+    background-position: 29% 45.2%;
+  }
 }
 
 .main-page {
@@ -281,13 +281,17 @@ figure {
   cursor       : pointer;
   font-size    : 0;
   margin-bottom: 0.1875rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    outline       : 0.125rem solid #00b0ff;
+    outline-offset: -0.125rem;
+  }
 }
 
-.shop__preview:last-child {
-  margin-bottom: 0;
-}
-
-.shop__preview:hover,
 .shop__preview_selected {
   outline       : 0.125rem solid #00b0ff;
   outline-offset: -0.125rem;
@@ -379,13 +383,17 @@ figure {
   margin-right  : 7.59493670886%;
   padding-bottom: 0.1875rem;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border-bottom: 0.1875rem solid #00b0ff;
+    color        : #000;
+  }
 }
 
-.tabs__item:last-child {
-  margin-right: 0;
-}
-
-.tabs__item:hover,
 .tabs__item_selected {
   border-bottom: 0.1875rem solid #00b0ff;
   color        : #000;
@@ -445,16 +453,16 @@ figure {
   position        : relative;
   vertical-align  : top;
   width           : 48.7179487179%;
-}
 
-.about-us__article:before {
-  background-color: inherit;
-  content         : '';
-  height          : 100%;
-  left            : -950px;
-  position        : absolute;
-  top             : 0;
-  width           : 1000px;
+  &::before {
+    background-color: inherit;
+    content         : '';
+    height          : 100%;
+    left            : -950px;
+    position        : absolute;
+    top             : 0;
+    width           : 1000px;
+  }
 }
 
 .about-us__title {
@@ -479,10 +487,6 @@ figure {
 
 .delimiter-location {
   background: url("images/sprite.svg") 0 58% / 1250% no-repeat;
-}
-
-.profile:hover .profile__location-delimiter {
-  background-position: 19.7% 58%;
 }
 
 .about-us__description {
@@ -532,24 +536,38 @@ figure {
   width           : 26%;
 }
 
-.carousel__item:not(:first-child) {
-  margin-left: -1.25rem;
-}
+  &:not(:first-child) {
+    margin-left: -1.25rem;
+  }
 
-.carousel__item:nth-child(even) {
-  top    : 30px;
-  z-index: 1;
+  &:nth-child(even) {
+    top    : 30px;
+    z-index: 1;
+  }
 }
 
 .profile {
   background-color: #fff;
   border-radius   : 3%;
   box-shadow      : 1.25rem 1.25rem 3.125rem 0 rgba(0, 0, 0, 0.2);
-}
-
-.profile:hover,
-.profile_selected {
-  background-color: #00b0ff;
+  
+  &:hover {
+    background-color: #00b0ff;
+    
+    .profile__location,
+    .profile__name,
+    .profile__nickname {
+      color: #fff;
+    }
+    
+    .profile__delimiter {
+      background-position: 53% 7.7%;
+    }
+    
+    .profile__location-delimiter {
+      background-position: 19.7% 58%;
+    }
+  }
 }
 
 .profile__avatar {
@@ -587,20 +605,6 @@ figure {
   height      : 13px;
   margin-right: 0.78431372549%;
   width       : 9px;
-}
-
-.profile:hover .profile__location,
-.profile:hover .profile__name,
-.profile:hover .profile__nickname,
-.profile_selected .profile__location,
-.profile_selected .profile__name,
-.profile_selected .profile__nickname {
-  color: #fff;
-}
-
-.profile:hover .profile__delimiter,
-.profile_selected .profile__delimiter {
-  background-position: 53% 7.7%;
 }
 
 .carousel__next,
@@ -647,8 +651,17 @@ figure {
   width  : 23.0769230769%;
 }
 
-.post:hover {
-  box-shadow: 0 0 1.5625rem 0 rgba(0, 0, 0, 0.32);
+  &:hover {
+    box-shadow: 0 0 1.5625rem 0 rgba(0, 0, 0, 0.32);
+    
+    .post__image-wrapper::after {
+      background-image: none;
+    }
+    
+    .post__caption {
+      color: #0022ff;
+    }
+  }
 }
 
 .post__image {
@@ -658,21 +671,17 @@ figure {
 
 .post__image-wrapper {
   position: relative;
-}
 
-.post__image-wrapper::after {
-  background-image: linear-gradient(to bottom, transparent, #000);
-  content         : '';
-  height          : 100%;
-  left            : 0;
-  opacity         : 0.7;
-  position        : absolute;
-  top             : 0;
-  width           : 100%;
-}
-
-.post:hover .post__image-wrapper::after {
-  background-image: none;
+  &::after {
+    background-image: linear-gradient(to bottom, transparent, #000);
+    content         : '';
+    height          : 100%;
+    left            : 0;
+    opacity         : 0.7;
+    position        : absolute;
+    top             : 0;
+    width           : 100%;
+  }
 }
 
 .post__caption {
@@ -680,10 +689,6 @@ figure {
   font      : 1rem/1.5rem "Raleway", sans-serif;
   margin    : 9.25925925926%;
   text-align: left;
-}
-
-.post:hover .post__caption {
-  color: #0022ff;
 }
 
 .main-page__social {
@@ -787,16 +792,16 @@ figure {
   letter-spacing  : 0.0625rem;
   padding         : 0.375rem 0.5rem 0.1875rem;
   text-transform  : capitalize;
-}
 
-.fb-button::before {
-  background    : url("images/facebook.png") -26px -173px no-repeat;
-  content       : "";
-  display       : inline-block;
-  height        : 12px;
-  margin-right  : 0.125rem;
-  vertical-align: -0.0625rem;
-  width         : 12px;
+  &::before {
+    background    : url("images/facebook.png") -26px -173px no-repeat;
+    content       : "";
+    display       : inline-block;
+    height        : 12px;
+    margin-right  : 0.125rem;
+    vertical-align: -0.0625rem;
+    width         : 12px;
+  }
 }
 
 .fb-button_like::before {
@@ -835,14 +840,14 @@ figure {
 }
 
 .fb-members__item {
-  box-sizing    : border-box;
-  display       : inline-block;
-  padding-right : 0.649350649359%;
-  width         : 11.1111111111%;
-}
-
-.fb-members__item:last-child {
-  margin-right: 0;
+  box-sizing   : border-box;
+  display      : inline-block;
+  padding-right: 0.649350649359%;
+  width        : 11.1111111111%;
+  
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .fb-members__avatar {
@@ -1432,10 +1437,10 @@ figure {
     margin        : 10% 10% 0;
     padding-bottom: 4.9914529911%;
     width         : 80%;
-  }
-
-  .about-us__article::before {
-    content: none;
+    
+    &::before {
+      content: none;
+    }
   }
 
   .about-us__description {
@@ -1467,16 +1472,17 @@ figure {
     width      : 75%;
   }
 
-  .carousel__item,
-  .carousel__item:nth-child(even),
-  .carousel__item:not(:first-child)
-   {
-    box-sizing : border-box;
-    margin     : 5px;
-    min-height : 81px;
-    position   : static;
-    width      : 90%;
-    z-index    : auto;
+  .carousel__item {
+    &,
+    &:nth-child(even),
+    &:not(:first-child) {
+      box-sizing: border-box;
+      margin    : 5px;
+      min-height: 81px;
+      position  : static;
+      width     : 90%;
+      z-index   : auto;
+    }
   }
 
   .profile {
