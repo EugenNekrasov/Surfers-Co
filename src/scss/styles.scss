@@ -155,10 +155,9 @@ figure {
 
 .social-links__item {
   display     : inline-block;
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
+  
+  &:not(:last-of-type) {
+    margin-right: 10px;
   }
 }
 
@@ -281,10 +280,9 @@ figure {
   border       : 1px solid #ccc;
   cursor       : pointer;
   font-size    : 0;
-  margin-bottom: 0.1875rem;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:not(:last-of-type) {
+    margin-bottom: 0.1875rem;
   }
 
   &:hover {
@@ -381,12 +379,11 @@ figure {
   font-size     : 0.875rem;
   font-weight   : bold;
   line-height   : 1.5625rem;
-  margin-right  : 7.59493670886%;
   padding-bottom: 0.1875rem;
   text-transform: uppercase;
 
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-of-type) {
+    margin-right  : 7.59493670886%;
   }
 
   &:hover {
@@ -839,13 +836,12 @@ figure {
 }
 
 .fb-members__item {
-  box-sizing   : border-box;
-  display      : inline-block;
-  padding-right: 0.649350649359%;
-  width        : 11.1111111111%;
+  box-sizing: border-box;
+  display   : inline-block;
+  width     : 11.1111111111%;
   
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-of-type) {
+    padding-right: 0.649350649359%;
   }
 }
 
@@ -1403,8 +1399,11 @@ figure {
     width          : 75%;
   }
 
-  .shop__preview, .shop__preview:last-child {
-    margin: 5px;
+  .shop__preview {
+    &,
+    &:not(:last-of-type) {
+      margin: 0 5px;
+    }
   }
 
   .shop__scroll {
