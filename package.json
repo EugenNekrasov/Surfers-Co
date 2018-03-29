@@ -4,11 +4,11 @@
   "description": "Study site with surfers theme.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --output-style expanded -o dist src/scss",
-    "serve": "browser-sync start --server 'dist' --files 'dist'",
-    "watch:css": "onchange 'src/scss/*.scss' -- npm run scss",
-    "watch:all": "parallelshell 'npm run serve' 'npm run watch:css'"
+    "scss": "node-sass --output-style compressed -o ./ scss",
+    "serve": "browser-sync start --server ./ --files ./",
+    "watch:css": "onchange 'scss/*.scss' -- npm run scss",
+    "watch": "run-p serve watch:css",
+    "postinstall": "run-s scss watch"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "node-sass": "^4.7.2",
-    "onchange": "^3.3.0",
-    "parallelshell": "^3.0.2"
+    "npm-run-all": "^4.1.2",
+    "onchange": "^3.3.0"
   }
 }
