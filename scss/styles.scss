@@ -129,7 +129,7 @@ figure {
   font-weight   : 500;
   padding       : 0.3125rem 0.625rem;
   text-transform: uppercase;
-  
+
   &:hover {
     background-color: #00b0ff;
     color           : #fff;
@@ -155,7 +155,7 @@ figure {
 
 .social-links__item {
   display     : inline-block;
-  
+
   &:not(:last-of-type) {
     margin-right: 10px;
   }
@@ -167,7 +167,7 @@ figure {
   display      : block;
   height       : 36px;
   width        : 36px;
-  
+
   &:hover {
     background-color: #000;
   }
@@ -547,20 +547,20 @@ figure {
   background-color: #fff;
   border-radius   : 3%;
   box-shadow      : 1.25rem 1.25rem 3.125rem 0 rgba(0, 0, 0, 0.2);
-  
+
   &:hover {
     background-color: #00b0ff;
-    
+
     .profile__location,
     .profile__name,
     .profile__nickname {
       color: #fff;
     }
-    
+
     .profile__delimiter {
       background-position: 53% 7.7%;
     }
-    
+
     .profile__location-delimiter {
       background-position: 19.7% 58%;
     }
@@ -649,11 +649,11 @@ figure {
 
   &:hover {
     box-shadow: 0 0 1.5625rem 0 rgba(0, 0, 0, 0.32);
-    
+
     .post__image-wrapper::after {
       background-image: none;
     }
-    
+
     .post__caption {
       color: #0022ff;
     }
@@ -839,7 +839,7 @@ figure {
   box-sizing: border-box;
   display   : inline-block;
   width     : 11.1111111111%;
-  
+
   &:not(:last-of-type) {
     padding-right: 0.649350649359%;
   }
@@ -1435,7 +1435,7 @@ figure {
     margin        : 10% 10% 0;
     padding-bottom: 4.9914529911%;
     width         : 80%;
-    
+
     &::before {
       content: none;
     }
